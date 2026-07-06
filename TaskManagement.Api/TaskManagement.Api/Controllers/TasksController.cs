@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Services;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -7,82 +9,70 @@ namespace TaskManagement.Api.Controllers
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
     {
-        //geçici örnek model verisi
-        private static List<TaskModel> tasks = new List<TaskModel>
+        private readonly TaskService _taskServices;
+
+        public TasksController(TaskService taskService)
         {
-            new TaskModel
-            {
-                Id = 1,
-                Title = "ASP.NET Core öğren",
-                Description = "Controller ve endpoint mantığını öğren",
-                IsCompleted = false,
-                CreatedDate = DateTime.Now
-            },
-            new TaskModel
-            {
-                Id = 2,
-                Title = "Swagger testleri yap",
-                Description = "GET, POST, PUT, DELETE endpointlerini dene",
-                IsCompleted = false,
-                CreatedDate = DateTime.Now
-            }
-        };
+            _taskServices = taskService;
+        }
+        
 
         [HttpGet]
-        public ActionResult<List<TaskModel>> GetAll()
+        public ActionResult<List<TaskDto>> GetAll()
         {
+            var tasks = _taskServices.GetAll();
+
             return Ok(tasks);
         }
         [HttpGet("{id}")]
-        public ActionResult<List<TaskModel>> GetById(int id)
+        public ActionResult<List<TaskDto>> GetById(int id)
         {
-            var tasksRet = tasks.FirstOrDefault(x => x.Id == id);
-            
-            if (tasksRet == null)
-            {
-                return NotFound();
-            }
+            var task = _taskServices.GetById(id);
 
-            return Ok(tasksRet);
+            if (task == null)
+            {
+                return NotFound("Task bulunamadı.");
+            }
+            
+            return Ok(task);
         }
         [HttpPost]
-        public ActionResult<TaskModel> Create(TaskModel model)
+        public ActionResult<TaskDto> Create(CreateTaskDto createTaskDto)
         {
-            model.Id = tasks.Max(x => x.Id) + 1;
-            model.CreatedDate = DateTime.Now;
-            tasks.Add(model);
+            if (string.IsNullOrWhiteSpace(createTaskDto.Title))
+            {
+                return BadRequest("Title alanı boş olamaz.");
+            }
 
-            return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
+            var createdTask = _taskServices.Create(createTaskDto);
+
+            return CreatedAtAction(nameof(GetById), new { id = createdTask.Id }, createdTask);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id , TaskModel model)
+        public IActionResult Update(int id , UpdateTaskDto model)
         {
-            var tasksRet = tasks.FirstOrDefault(x => x.Id == id);
+            var result = _taskServices.Update(id, model);
 
-            if(tasksRet == null)
+            if (!result)
             {
-                return NotFound();
+                return NotFound("Güncellenicek task bulunamadı.");
             }
 
-            tasksRet.Title = model.Title;
-            tasksRet.Description = model.Description;
-            tasksRet.IsCompleted = model.IsCompleted;
-
-            return NoContent();
+            return NoContent(); //204 e karşılık geliyor
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var task = tasks.FirstOrDefault(x => x.Id == id);
+            var result = _taskServices.Delete(id);
 
-            if (task == null)
-                return NotFound();
+            if (!result)
+            {
+                return NotFound("Silinecek task bulunamadı.");
+            }
 
-            tasks.Remove(task);
-
-            return NoContent();
+            return NoContent(); //204 e karşılık geliyor.
         }
     }
 }

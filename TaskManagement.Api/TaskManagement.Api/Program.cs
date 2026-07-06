@@ -1,3 +1,4 @@
+using TaskManagement.Api.Services;
 using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,8 +21,21 @@ Yani uygulamanın temel altyapısı hazırlanıyor.
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddSingleton<TaskService>();
 /*
- 
+ "TaskService sınıfını uygulamanın Dependency Injection (DI) sistemine kaydet."
+
+builder: Uygulama başlatılırken kullanılan nesnedir.
+
+var builder = WebApplication.CreateBuilder(args);  : Burada uygulamanın ayarlarını yapıyoruz.
+
+Services: Uygulamadaki servislerin tutulduğu koleksiyondur. ("Benim kullanacağım servisler burada kayıtlı.")
+
+AddSingleton: En önemli kısım burası.  TaskService'den uygulama boyunca sadece 1 tane oluştur.
+
+eskiden new ile sen nesneyi oluşturursun.
+Dependency Injection'da ise nesneyi ASP.NET Core oluşturur ve ihtiyacın olduğunda sana verir.
  */
 
 
