@@ -1,3 +1,4 @@
+using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Services;
 using static System.Net.WebRequestMethods;
 
@@ -22,7 +23,7 @@ Yani uygulamanın temel altyapısı hazırlanıyor.
 
 builder.Services.AddControllers();
 
-builder.Services.AddSingleton<TaskService>();
+builder.Services.AddSingleton<ITaskService ,TaskService>(); // “Biri benden ITaskService isterse, ona TaskService ver.”
 /*
  "TaskService sınıfını uygulamanın Dependency Injection (DI) sistemine kaydet."
 

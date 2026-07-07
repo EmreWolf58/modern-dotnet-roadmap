@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Interfaces;
 
 namespace TaskManagement.Api.Services
 {
-    public class TaskService
+    public class TaskService: ITaskService
     {
         private static readonly List<TaskModel> _tasks = new()
         {
