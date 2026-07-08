@@ -2,12 +2,15 @@
 using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Model.TaskModel;
 using TaskManagement.Api.Interfaces;
+using Microsoft.Extensions.Options;
+using TaskManagement.Api.Settings;
 
 namespace TaskManagement.Api.Services
 {
     public class TaskService: ITaskService
     {
-        private static readonly List<TaskModel> _tasks = new()
+        private readonly ApplicationSettings _settings;
+        private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
             {
@@ -26,6 +29,17 @@ namespace TaskManagement.Api.Services
                 CreatedDate = DateTime.Now
             }
         };
+
+        public TaskService(IOptions<ApplicationSettings> settings)
+        {
+            _settings = settings.Value;
+
+            _tasks = new List<TaskModel>()
+            {
+
+            };
+        }
+
         private TaskDto MapToDto(TaskModel task)
         {
             return new TaskDto
@@ -57,6 +71,11 @@ namespace TaskManagement.Api.Services
 
         public TaskDto Create(CreateTaskDto createTaskDto)
         {
+            if (_tasks.Count >= _settings.MaxTaskCount)
+            {
+                throw new Exception("Task limiti doldu.");
+            }
+
             var newTask = new TaskModel
             {
                 Id = _tasks.Any() ? _tasks.Max(x => x.Id) + 1 : 1,

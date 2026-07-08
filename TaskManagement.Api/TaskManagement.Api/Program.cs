@@ -1,6 +1,7 @@
 using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Services;
 using static System.Net.WebRequestMethods;
+using TaskManagement.Api.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -39,6 +40,16 @@ eskiden new ile sen nesneyi oluşturursun.
 Dependency Injection'da ise nesneyi ASP.NET Core oluşturur ve ihtiyacın olduğunda sana verir.
  */
 
+
+builder.Services.Configure<ApplicationSettings>(builder.Configuration.GetSection("ApplicationsSettings"));
+/*
+ bu kod ne yapar:
+şunu buluyor.
+ApplicationSettings
+{
+}
+sonra bunu ApplicationSettings.cs içine dolduruyo yani jsonu class a döndürüyor.
+ */
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
