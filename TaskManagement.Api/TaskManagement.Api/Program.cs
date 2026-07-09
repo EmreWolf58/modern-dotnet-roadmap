@@ -2,6 +2,7 @@ using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Services;
 using static System.Net.WebRequestMethods;
 using TaskManagement.Api.Settings;
+using TaskManagement.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -57,6 +58,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 //uygulamayı oluşturur.
 
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
