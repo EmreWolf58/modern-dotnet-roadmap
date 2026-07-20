@@ -7,7 +7,7 @@ namespace TaskManagement.Api.Interfaces
         List<TaskDto> GetAll();
         TaskDto? GetById(int id);
         TaskDto Create(CreateTaskDto createdTaskDto);
-        bool Update(int id, UpdateTaskDto updateTaskDto);
+        TaskDto? Update(int id, UpdateTaskDto updateTaskDto);
         bool Delete(int id);
     }
 }

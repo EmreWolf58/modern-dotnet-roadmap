@@ -1,8 +1,20 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 using TaskManagement.Api.Interfaces;
-using TaskManagement.Api.Services;
-using static System.Net.WebRequestMethods;
-using TaskManagement.Api.Settings;
 using TaskManagement.Api.Middlewares;
+using TaskManagement.Api.Model.JwtSettingsModel;
+using TaskManagement.Api.Services;
+using TaskManagement.Api.Settings;
+using static System.Net.WebRequestMethods;
+using FluentValidation;
+using TaskManagement.Api.Validators;
+using TaskManagement.Api.Mapping;
+using AutoMapper;
+using TaskManagement.Api.Filters;
+using Microsoft.AspNetCore.Mvc;
+using TaskManagement.Api.Responses;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -23,7 +35,10 @@ Yani uygulamanın temel altyapısı hazırlanıyor.
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>(); //Controller action’ı çalışmadan önce devreye girer. ValidationFilter.cs
+});
 
 builder.Services.AddSingleton<ITaskService ,TaskService>(); // “Biri benden ITaskService isterse, ona TaskService ver.”
 /*
@@ -52,12 +67,120 @@ ApplicationSettings
 sonra bunu ApplicationSettings.cs içine dolduruyo yani jsonu class a döndürüyor.
  */
 
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt")); // bu kod ne yapar: şunu buluyor. JwtSettings { } sonra bunu JwtSettings.cs içine dolduruyo yani jsonu class a döndürüyor.
+builder.Services.AddScoped<IJwtService, JwtService>(); // “Biri benden IJwtService isterse, ona JwtService ver. Burada Scoped kullanabiliriz. Servis her HTTP isteği için bir kez oluşturulur.
+
+//Gelen token Issuer doğru mu? Audience doğru mu? İmza doğru mu? Süresi dolmuş mu? Hepsi doğruysa Kullanıcı sisteme giriş yapmış.
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var jwtSettings = builder.Configuration
+            .GetSection("Jwt")
+            .Get<JwtSettings>();
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = jwtSettings!.Issuer,
+
+            ValidateAudience = true,
+            ValidAudience = jwtSettings.Audience,
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSettings.Key)),
+
+            ValidateLifetime = true,
+
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateTaskDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<UpdateTaskDtoValidator>();
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Token giriniz."
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
+builder.Services.AddAutoMapper(cfg => { },typeof(TaskMappingProfile));
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("OnlyAdmins", policy =>
+    {
+        policy.RequireRole("Admin");
+    });
+});
+
+builder.Services.AddScoped<ValidationFilter>();
+
+builder.Services.Configure<ApiBehaviorOptions>(
+    options =>
+    {
+        options.InvalidModelStateResponseFactory =
+            context =>
+            {
+                var errors = context.ModelState
+                    .Where(item =>
+                        item.Value?.Errors.Count > 0)
+                    .ToDictionary(
+                        item => item.Key,
+                        item => item.Value!.Errors
+                            .Select(error =>
+                                string.IsNullOrWhiteSpace(
+                                    error.ErrorMessage)
+                                    ? "Geçersiz bir değer gönderildi."
+                                    : error.ErrorMessage)
+                            .ToArray());
+
+                var response = new ApiErrorResponse
+                {
+                    Message =
+                        "Gönderilen request geçersiz.",
+                    StatusCode =
+                        StatusCodes.Status400BadRequest,
+                    Errors = errors,
+                    Path =
+                        context.HttpContext.Request.Path,
+                    TraceId =
+                        context.HttpContext.TraceIdentifier
+                };
+
+                return new BadRequestObjectResult(response);
+            };
+    });
 
 var app = builder.Build();
 //uygulamayı oluşturur.
 
+app.UseMiddleware<ExceptionMiddleware>(); //Bu yüzden hata yakalama middleware'i genellikle pipeline'ın başında bulunur.
 app.UseMiddleware<RequestLoggingMiddleware>();
 
 if (app.Environment.IsDevelopment())
@@ -67,6 +190,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection(); //HTTP gelirse HTTPS'e yönlendir.
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

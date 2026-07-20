@@ -4,11 +4,13 @@ using TaskManagement.Api.Model.TaskModel;
 using TaskManagement.Api.Interfaces;
 using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;
+using AutoMapper;
 
 namespace TaskManagement.Api.Services
 {
     public class TaskService: ITaskService
     {
+        private readonly IMapper _mapper;
         private readonly ApplicationSettings _settings;
         private readonly List<TaskModel> _tasks = new()
         {
@@ -30,31 +32,16 @@ namespace TaskManagement.Api.Services
             }
         };
 
-        public TaskService(IOptions<ApplicationSettings> settings)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper)
         {
             _settings = settings.Value;
+            _mapper = mapper;
 
-            _tasks = new List<TaskModel>()
-            {
-
-            };
-        }
-
-        private TaskDto MapToDto(TaskModel task)
-        {
-            return new TaskDto
-            {
-                Id = task.Id,
-                Title = task.Title,
-                Description = task.Description,
-                IsCompleted = task.IsCompleted,
-                CreatedDate = task.CreatedDate
-            };
         }
 
         public List<TaskDto> GetAll()
         {
-            return _tasks.Select(task => MapToDto(task)).ToList();
+            return _mapper.Map<List<TaskDto>>(_tasks);
         }
 
         public TaskDto? GetById (int id)
@@ -66,43 +53,33 @@ namespace TaskManagement.Api.Services
                 return null;
             }
 
-            return MapToDto(task);
+            return _mapper.Map<TaskDto>(task);
         }
 
         public TaskDto Create(CreateTaskDto createTaskDto)
         {
-            if (_tasks.Count >= _settings.MaxTaskCount)
-            {
-                throw new Exception("Task limiti doldu.");
-            }
+            var task = _mapper.Map<TaskModel>(createTaskDto);
 
-            var newTask = new TaskModel
-            {
-                Id = _tasks.Any() ? _tasks.Max(x => x.Id) + 1 : 1,
-                Title = createTaskDto.Title,
-                Description = createTaskDto.Description,
-                IsCompleted = false,
-                CreatedDate = DateTime.Now
-            };
-            _tasks.Add(newTask);
+            task.Id = _tasks.Any() ? _tasks.Max(x => x.Id) + 1 : 1;
 
-            return MapToDto(newTask);
+            task.IsCompleted = false;
+            task.CreatedDate = DateTime.Now;
+
+            _tasks.Add(task);
+
+            return _mapper.Map<TaskDto>(task);
         }
 
-        public bool Update(int id, UpdateTaskDto updateTaskDto)
+        public TaskDto? Update(int id, UpdateTaskDto updateTaskDto)
         {
             var task = _tasks.FirstOrDefault(x => x.Id == id);
 
             if (task == null)
-            {
-                return false;
-            }
+                return null;
 
-            task.Title = updateTaskDto.Title;
-            task.Description = updateTaskDto.Description;
-            task.IsCompleted = updateTaskDto.IsCompleted;
+            _mapper.Map(updateTaskDto, task);
 
-            return true;
+            return _mapper.Map<TaskDto>(task);
         }
 
         public bool Delete (int id)
