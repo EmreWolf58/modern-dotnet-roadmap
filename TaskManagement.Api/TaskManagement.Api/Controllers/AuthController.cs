@@ -11,9 +11,11 @@ namespace TaskManagement.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IJwtService _jwtService;
-        public AuthController(IJwtService jwtService)
+        private readonly ILogger<AuthController> _logger;
+        public AuthController(IJwtService jwtService, ILogger<AuthController> logger)
         {
             _jwtService = jwtService;
+            _logger = logger;
         }
 
         [AllowAnonymous]
@@ -78,6 +80,20 @@ namespace TaskManagement.Api.Controllers
         public IActionResult PolicyTest()
         {
             return Ok("Policy başarılı.");
+        }
+        [HttpGet("error")]
+        public IActionResult Error()
+        {
+            try
+            {
+                throw new Exception("Test exception");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Test hatası oluştu.");
+
+                return BadRequest();
+            }
         }
     }
 }

@@ -1,0 +1,38 @@
+[14:21:02 INF] User profile is available. Using 'C:\Users\emrek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:21:02 INF] Now listening on: https://localhost:7214
+[14:21:02 INF] Now listening on: http://localhost:5218
+[14:21:03 INF] Application started. Press Ctrl+C to shut down.
+[14:21:03 INF] Hosting environment: Development
+[14:21:03 INF] Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[14:21:04 INF] Request starting HTTP/2 GET https://localhost:7214/swagger/index.html - null null
+[14:21:04 INF] Request finished HTTP/2 GET https://localhost:7214/swagger/index.html - 200 null text/html;charset=utf-8 190.5497ms
+[14:21:04 INF] Request starting HTTP/2 GET https://localhost:7214/_framework/aspnetcore-browser-refresh.js - null null
+[14:21:04 INF] Request finished HTTP/2 GET https://localhost:7214/_framework/aspnetcore-browser-refresh.js - 200 14941 application/javascript; charset=utf-8 10.0139ms
+[14:21:05 INF] Request starting HTTP/2 GET https://localhost:7214/_vs/browserLink - null null
+[14:21:05 INF] Request finished HTTP/2 GET https://localhost:7214/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.4148ms
+[14:21:05 INF] Request starting HTTP/2 GET https://localhost:7214/swagger/v1/swagger.json - null null
+[14:21:05 INF] Request finished HTTP/2 GET https://localhost:7214/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.2961ms
+[14:25:35 INF] User profile is available. Using 'C:\Users\emrek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:25:36 INF] Now listening on: https://localhost:7214
+[14:25:36 INF] Now listening on: http://localhost:5218
+[14:25:36 INF] Application started. Press Ctrl+C to shut down.
+[14:25:36 INF] Hosting environment: Development
+[14:25:36 INF] Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[14:25:37 INF] Request starting HTTP/2 GET https://localhost:7214/swagger/index.html - null null
+[14:25:37 INF] Request finished HTTP/2 GET https://localhost:7214/swagger/index.html - 200 null text/html;charset=utf-8 209.4198ms
+[14:25:37 INF] Request starting HTTP/2 GET https://localhost:7214/_framework/aspnetcore-browser-refresh.js - null null
+[14:25:37 INF] Request finished HTTP/2 GET https://localhost:7214/_framework/aspnetcore-browser-refresh.js - 200 14941 application/javascript; charset=utf-8 10.4913ms
+[14:25:37 INF] Request starting HTTP/2 GET https://localhost:7214/_vs/browserLink - null null
+[14:25:37 INF] Request finished HTTP/2 GET https://localhost:7214/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.5521ms
+[14:25:37 INF] Request starting HTTP/2 GET https://localhost:7214/swagger/v1/swagger.json - null null
+[14:25:37 INF] Request finished HTTP/2 GET https://localhost:7214/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.2517ms
+[14:25:43 INF] Request starting HTTP/2 GET https://localhost:7214/api/Auth/error - null null
+[14:25:43 INF] Executing endpoint 'TaskManagement.Api.Controllers.AuthController.Error (TaskManagement.Api)'
+[14:25:43 INF] Route matched with {action = "Error", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller TaskManagement.Api.Controllers.AuthController (TaskManagement.Api).
+[14:25:43 ERR] Test hatası oluştu.
+System.Exception: Test exception
+   at TaskManagement.Api.Controllers.AuthController.Error() in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\AuthController.cs:line 89
+[14:25:43 INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[14:25:43 INF] Executed action TaskManagement.Api.Controllers.AuthController.Error (TaskManagement.Api) in 71.3898ms
+[14:25:43 INF] Executed endpoint 'TaskManagement.Api.Controllers.AuthController.Error (TaskManagement.Api)'
+[14:25:43 INF] Request finished HTTP/2 GET https://localhost:7214/api/Auth/error - 400 null application/problem+json; charset=utf-8 149.2856ms

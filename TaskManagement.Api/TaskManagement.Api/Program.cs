@@ -15,6 +15,10 @@ using AutoMapper;
 using TaskManagement.Api.Filters;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Api.Responses;
+using Serilog;
+using TaskManagement.Api.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using HealthChecks.UI.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -35,10 +39,17 @@ Yani uygulamanın temel altyapısı hazırlanıyor.
 
 // Add services to the container.
 
+builder.Host.UseSerilog((context, configuration) =>
+{
+    configuration.ReadFrom.Configuration(context.Configuration);
+});
+
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ValidationFilter>(); //Controller action’ı çalışmadan önce devreye girer. ValidationFilter.cs
 });
+
+builder.Services.AddHealthChecks(); // Health Check'ler canlı ortamlarda (Azure, AWS, Kubernetes, Docker vb.) uygulamanın çalışır durumda olup olmadığını anlamak için kullanılır.
 
 builder.Services.AddSingleton<ITaskService ,TaskService>(); // “Biri benden ITaskService isterse, ona TaskService ver.”
 /*
@@ -177,6 +188,14 @@ builder.Services.Configure<ApiBehaviorOptions>(
             };
     });
 
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+builder.Services.Configure<CacheSettings>(builder.Configuration.GetSection("CacheSettings"));
+
+builder.Services.AddHealthChecks()
+    .AddCheck<ConfigurationHealthCheck>("Application")
+    .AddCheck<ConfigurationHealthCheck>("Configuration");
+
 var app = builder.Build();
 //uygulamayı oluşturur.
 
@@ -194,7 +213,10 @@ app.UseHttpsRedirection(); //HTTP gelirse HTTPS'e yönlendir.
 app.UseAuthentication();
 
 app.UseAuthorization();
-
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    ResponseWriter= UIResponseWriter.WriteHealthCheckUIResponse
+});
 app.MapControllers(); //Controller'ları kullan. Yani /api/tasks yada /api/users gibi endpointleri aktif et.
 
 app.Run(); //Artık uygulamayı çalıştır. Bu satırdan sonra API istek kabul etmeye başlar.
