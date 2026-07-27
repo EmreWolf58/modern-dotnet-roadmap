@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;
+using TaskManagement.Api.DTOS;
+using TaskManagement.Api.Helpers;
+using TaskManagement.Api.Model.TaskModel;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -56,6 +59,50 @@ namespace TaskManagement.Api.Controllers
             };
 
             return Ok(response);
+        }
+
+        [HttpGet("reflection-test")]
+        public IActionResult ReflectionTest() //test için eklendi.
+        {
+            var propertyNames =
+                ReflectionHelper.GetPropertyNames<TaskDto>();
+
+            var propertyTypes =
+                ReflectionHelper.GetPropertyTypes<TaskDto>();
+
+            return Ok(new
+            {
+                ClassName = nameof(TaskDto),
+                PropertyNames = propertyNames,
+                PropertyTypes = propertyTypes
+            });
+        }
+
+        [HttpGet("delegate-test")]
+        public IActionResult DelegateTest()
+        {
+            Action<string> writeMessage = message =>
+            {
+                Console.WriteLine(message);
+            };
+
+            Func<int, int, int> sum = (first, second) =>
+            {
+                return first + second;
+            };
+
+            Predicate<int> isPositive = number =>
+            {
+                return number > 0;
+            };
+
+            writeMessage("Delegate testi çalıştı.");
+
+            return Ok(new
+            {
+                SumResult = sum(5,3),
+                IsPositive = isPositive(10)
+            });
         }
     }
 }

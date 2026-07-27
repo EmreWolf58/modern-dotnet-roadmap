@@ -37,7 +37,7 @@ namespace TaskManagement.Api.Controllers
             _logger.LogInformation("Task detayı istendi. TaskId: {TaskId}", id);
             var task = _taskServices.GetById(id);
 
-            if (task == null)
+            if (task is null)
             {
                 _logger.LogInformation("Task bulunamadı. TaskId: {TaskId}", id);
                 var errorResponse = ApiResponse<TaskDto>.CreateFailure("Task bulunamadı.");
@@ -70,7 +70,7 @@ namespace TaskManagement.Api.Controllers
 
             var result = _taskServices.Update(id, model);
 
-            if (result == null)
+            if (result is null)
             {
                 _logger.LogInformation("Task güncellenemedi çünkü bulunamadı. TaskId: {TaskId}", id);
                 return NotFound("Güncellenicek task bulunamadı.");

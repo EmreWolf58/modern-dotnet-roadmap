@@ -1,24 +1,25 @@
+using AutoMapper;
+using FluentValidation;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System.Text;
+using TaskManagement.Api.Events;
+using TaskManagement.Api.Filters;
+using TaskManagement.Api.HealthChecks;
 using TaskManagement.Api.Interfaces;
+using TaskManagement.Api.Mapping;
 using TaskManagement.Api.Middlewares;
 using TaskManagement.Api.Model.JwtSettingsModel;
+using TaskManagement.Api.Responses;
 using TaskManagement.Api.Services;
 using TaskManagement.Api.Settings;
-using static System.Net.WebRequestMethods;
-using FluentValidation;
 using TaskManagement.Api.Validators;
-using TaskManagement.Api.Mapping;
-using AutoMapper;
-using TaskManagement.Api.Filters;
-using Microsoft.AspNetCore.Mvc;
-using TaskManagement.Api.Responses;
-using Serilog;
-using TaskManagement.Api.HealthChecks;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using HealthChecks.UI.Client;
+using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -196,8 +197,13 @@ builder.Services.AddHealthChecks()
     .AddCheck<ConfigurationHealthCheck>("Application")
     .AddCheck<ConfigurationHealthCheck>("Configuration");
 
+builder.Services.AddSingleton<TaskEventPublisher>();
+builder.Services.AddSingleton<TaskEventSubscriber>();
+
 var app = builder.Build();
 //uygulamayı oluşturur.
+
+app.Services.GetRequiredService<TaskEventSubscriber>();
 
 app.UseMiddleware<ExceptionMiddleware>(); //Bu yüzden hata yakalama middleware'i genellikle pipeline'ın başında bulunur.
 app.UseMiddleware<RequestLoggingMiddleware>();

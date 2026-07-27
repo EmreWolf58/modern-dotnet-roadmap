@@ -5,6 +5,7 @@ using TaskManagement.Api.Interfaces;
 using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;
 using AutoMapper;
+using TaskManagement.Api.Events;
 
 namespace TaskManagement.Api.Services
 {
@@ -12,6 +13,7 @@ namespace TaskManagement.Api.Services
     {
         private readonly IMapper _mapper;
         private readonly ApplicationSettings _settings;
+        private readonly TaskEventPublisher _taskEventPublisher;
         private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
@@ -32,10 +34,11 @@ namespace TaskManagement.Api.Services
             }
         };
 
-        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher)
         {
             _settings = settings.Value;
             _mapper = mapper;
+            _taskEventPublisher = taskEventPublisher;
 
         }
 
@@ -48,7 +51,7 @@ namespace TaskManagement.Api.Services
         {
             var task = _tasks.FirstOrDefault(task => task.Id == id);
 
-            if (task == null)
+            if (task is null)
             {
                 return null;
             }
@@ -67,6 +70,8 @@ namespace TaskManagement.Api.Services
 
             _tasks.Add(task);
 
+            _taskEventPublisher.PublishTaskCreated(task.Title);
+
             return _mapper.Map<TaskDto>(task);
         }
 
@@ -74,7 +79,7 @@ namespace TaskManagement.Api.Services
         {
             var task = _tasks.FirstOrDefault(x => x.Id == id);
 
-            if (task == null)
+            if (task is null)
                 return null;
 
             _mapper.Map(updateTaskDto, task);
@@ -86,12 +91,33 @@ namespace TaskManagement.Api.Services
         {
             var task = _tasks.FirstOrDefault(x => x.Id == id);
 
-            if (task == null)
+            if (task is null)
                 return false;
 
             _tasks.Remove(task);
 
             return true;
+        }
+
+        public static string GetTaskStatus(TaskModel task)
+        {
+            return task switch
+            {
+                {IsCompleted: true } => "Tamamlandı", //{IsCompleted: true } burası property pattern örneğidir.TaskModel nesnesinin IsCompleted değeri true ise anlamına gelir.
+                { IsCompleted:false } => "Devam Ediyor"
+            };
+        }
+
+        private static string GetTaskCountStatus(int taskCount) //Relational Pattern örneği
+        {
+            return taskCount switch
+            {
+                0 => "Hiç task yok",
+                1 => "Bir task var",
+                >= 2 and <= 5 => "Az sayıda task var",
+                > 5 => "Çok sayıda task var",
+                _ => "Geçersiz değer"
+            };
         }
     }
 }
