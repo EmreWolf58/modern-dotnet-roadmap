@@ -1,10 +1,11 @@
 ﻿using TaskManagement.Api.DTOS;
+using TaskManagement.Api.Responses;
 
 namespace TaskManagement.Api.Interfaces
 {
     public interface ITaskService
     {
-        List<TaskDto> GetAll();
+        PagedResponse<TaskDto> GetAll(TaskQuery query);
         TaskDto? GetById(int id);
         TaskDto Create(CreateTaskDto createdTaskDto);
         TaskDto? Update(int id, UpdateTaskDto updateTaskDto);
@@ -12,7 +13,7 @@ namespace TaskManagement.Api.Interfaces
     }
 }
 /*
- Burada ITaskService şunu söylüyor:
+ Burada ITaskService şunu söylüyor: 
 
  Yani kim ITaskService kullanıyorsa bu 5 metodu sağlamak zorunda.
 

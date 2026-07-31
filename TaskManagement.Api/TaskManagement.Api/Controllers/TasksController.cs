@@ -21,13 +21,31 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpGet]
-        public ActionResult<ApiResponse<List<TaskDto>>> GetAll()
+        public ActionResult<ApiResponse<PagedResponse<TaskDto>>> GetAll([FromQuery] TaskQuery query)
         {
-            _logger.LogInformation("Task listesi istendi");
-            var tasks = _taskServices.GetAll();
-            _logger.LogInformation("{TaskCount} adet task listelendi", tasks.Count);
+            _logger.LogInformation(
+        "Task listesi istendi. Page: {Page}, PageSize: {PageSize}, " +
+        "Search: {Search}, Completed: {Completed}, SortBy: {SortBy}, " +
+        "Descending: {Descending}, IncludeDeleted: {IncludeDeleted}",
+        query.Page,
+        query.PageSize,
+        query.Search,
+        query.Completed,
+        query.SortBy,
+        query.Descending,
+        query.IncludeDeleted
+    );
 
-            var response = ApiResponse<List<TaskDto>>.CreateSuccess(tasks, "Task listesi başarıyla getirildi.");
+            var result = _taskServices.GetAll(query);
+
+            _logger.LogInformation(
+        "{ListedTaskCount} adet task listelendi. " +
+        "Filtreye uyan toplam task: {TotalCount}",
+        result.Items.Count,
+        result.TotalCount);
+
+            var response = ApiResponse<PagedResponse<TaskDto>>.CreateSuccess(result, "Task listesi başarıyla getirildi.");
+
             return Ok(response);
         }
 

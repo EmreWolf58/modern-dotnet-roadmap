@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;
 using AutoMapper;
 using TaskManagement.Api.Events;
+using TaskManagement.Api.Responses;
 
 namespace TaskManagement.Api.Services
 {
@@ -42,14 +43,79 @@ namespace TaskManagement.Api.Services
 
         }
 
-        public List<TaskDto> GetAll()
+        public PagedResponse<TaskDto> GetAll( TaskQuery query)
         {
-            return _mapper.Map<List<TaskDto>>(_tasks);
+            IEnumerable<TaskModel> filteredTasks = _tasks;
+
+            if (!query.IncludeDeleted)
+            {
+                filteredTasks = filteredTasks.Where(task => !task.IsDeleted);
+            }
+
+            if (!string.IsNullOrWhiteSpace(query.Search))
+            {
+                filteredTasks = filteredTasks.Where(task =>
+                    task.Title.Contains(
+                        query.Search,
+                        StringComparison.OrdinalIgnoreCase
+                    ) ||
+                    task.Description.Contains(
+                        query.Search,
+                        StringComparison.OrdinalIgnoreCase
+                    )
+                );
+            }
+
+            if (query.Completed.HasValue)
+            {
+                filteredTasks = filteredTasks.Where(task =>
+                    task.IsCompleted == query.Completed.Value
+                );
+            }
+
+            filteredTasks = query.SortBy.ToLowerInvariant() switch
+            {
+                "title" => query.Descending
+                    ? filteredTasks.OrderByDescending(task => task.Title)
+                    : filteredTasks.OrderBy(task => task.Title),
+
+                "createddate" => query.Descending
+                    ? filteredTasks.OrderByDescending(task => task.CreatedDate)
+                    : filteredTasks.OrderBy(task => task.CreatedDate),
+
+                "id" => query.Descending
+                    ? filteredTasks.OrderByDescending(task => task.Id)
+                    : filteredTasks.OrderBy(task => task.Id),
+
+                _ => filteredTasks.OrderBy(task => task.Id)
+            };
+
+            var totalCount = filteredTasks.Count();
+
+            var pagedTasks = filteredTasks
+                .Skip((query.Page - 1) * query.PageSize)
+                .Take(query.PageSize)
+                .ToList();
+
+            var taskDtos = _mapper.Map<List<TaskDto>>(pagedTasks);
+
+            var totalPages = (int)Math.Ceiling(
+                totalCount / (double)query.PageSize
+            );
+
+            return new PagedResponse<TaskDto>
+            {
+                Page = query.Page,
+                PageSize = query.PageSize,
+                TotalCount = totalCount,
+                TotalPages = totalPages,
+                Items = taskDtos
+            };
         }
 
         public TaskDto? GetById (int id)
         {
-            var task = _tasks.FirstOrDefault(task => task.Id == id);
+            var task = _tasks.FirstOrDefault(task => task.Id == id && !task.IsDeleted);
 
             if (task is null)
             {
@@ -77,7 +143,7 @@ namespace TaskManagement.Api.Services
 
         public TaskDto? Update(int id, UpdateTaskDto updateTaskDto)
         {
-            var task = _tasks.FirstOrDefault(x => x.Id == id);
+            var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
 
             if (task is null)
                 return null;
@@ -89,12 +155,14 @@ namespace TaskManagement.Api.Services
 
         public bool Delete (int id)
         {
-            var task = _tasks.FirstOrDefault(x => x.Id == id);
+            var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
 
             if (task is null)
                 return false;
 
-            _tasks.Remove(task);
+            task.IsDeleted = true;
+            task.DeletedDate = DateTime.Now;
+            
 
             return true;
         }
