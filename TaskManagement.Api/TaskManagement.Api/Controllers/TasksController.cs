@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Api.DTOS;
+using TaskManagement.Api.Filters;
 using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Responses;
 
@@ -9,6 +10,7 @@ namespace TaskManagement.Api.Controllers
     [Authorize]
     [ApiController]
     [Route("api/[controller]")]
+    [ServiceFilter(typeof(ActionLoggingFilter))]
     public class TasksController : ControllerBase
     {
         private readonly ITaskService _taskServices;
@@ -21,6 +23,8 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(FirstActionFilter), Order = 1)]//test için eklendi. Order ile filtrelerin hangi sırayla çalışacağını belirleyebilirim.
+        [ServiceFilter(typeof(SecondActionFilter), Order = 2)]
         public ActionResult<ApiResponse<PagedResponse<TaskDto>>> GetAll([FromQuery] TaskQuery query)
         {
             _logger.LogInformation(
@@ -99,6 +103,7 @@ namespace TaskManagement.Api.Controllers
             return Ok(response); //204 e karşılık geliyor
         }
 
+        [ServiceFilter(typeof(ResultLoggingFilter))]// test için eklendi.
         [HttpDelete("{id}")]
         public ActionResult<ApiResponse<object>> Delete(int id)
         {
@@ -114,6 +119,13 @@ namespace TaskManagement.Api.Controllers
             _logger.LogInformation("Task silindi. TaskId: {TaskId}", id);
             var response = ApiResponse<object>.CreateSuccess(null, "Task başarıyla silindi.");
             return Ok(response);
+        }
+
+        [ServiceFilter(typeof(TestExceptionFilter))] //test için eklendi.
+        [HttpGet("exception-test")]
+        public IActionResult ExceptionTest()
+        {
+            throw new Exception("Test exception");
         }
     }
 }

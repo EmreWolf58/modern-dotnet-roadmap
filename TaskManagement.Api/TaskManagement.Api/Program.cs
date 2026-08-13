@@ -49,6 +49,16 @@ builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ValidationFilter>(); //Controller action’ı çalışmadan önce devreye girer. ValidationFilter.cs
 });
+builder.Services.AddScoped<ActionLoggingFilter>();
+
+builder.Services.AddScoped<TestExceptionFilter>();
+
+builder.Services.AddScoped<ResultLoggingFilter>();
+
+builder.Services.AddScoped<ResourceLoggingFilter>();
+
+builder.Services.AddScoped<FirstActionFilter>();
+builder.Services.AddScoped<SecondActionFilter>();
 
 builder.Services.AddHealthChecks(); // Health Check'ler canlı ortamlarda (Azure, AWS, Kubernetes, Docker vb.) uygulamanın çalışır durumda olup olmadığını anlamak için kullanılır.
 
