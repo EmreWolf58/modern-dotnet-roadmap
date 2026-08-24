@@ -4,6 +4,8 @@ using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Filters;
 using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Responses;
+using TaskManagement.Api.Model;
+using TaskManagement.Api.ModelBinders;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -126,6 +128,29 @@ namespace TaskManagement.Api.Controllers
         public IActionResult ExceptionTest()
         {
             throw new Exception("Test exception");
+        }
+        [HttpPost("{id}/binding-test")]
+        public IActionResult BindingTest([FromRoute] int id, [FromQuery] bool notify, [FromHeader (Name = "X-Client-Id")] string clientId, [FromBody] CreateTaskDto model)
+        {
+            return Ok(new
+            {
+                Id=id,
+                Notify = notify,
+                ClientId = clientId,
+                Title = model.Title
+            });
+        }
+
+        [HttpGet("custom-filter")]
+        public IActionResult CustomFilter(
+    [ModelBinder(BinderType = typeof(TaskFilterModelBinder))]
+    TaskFilter filter)
+        {
+            return Ok(new
+            {
+                filter.Status,
+                filter.Date
+            });
         }
     }
 }

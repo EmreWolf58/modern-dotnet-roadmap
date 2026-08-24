@@ -20,6 +20,7 @@ using TaskManagement.Api.Services;
 using TaskManagement.Api.Settings;
 using TaskManagement.Api.Validators;
 using static System.Net.WebRequestMethods;
+using Asp.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -125,6 +126,24 @@ builder.Services.AddValidatorsFromAssemblyContaining<UpdateTaskDtoValidator>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
+    #region version için ekliyorum
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "TaskManagement.Api",
+        Version = "v1"
+    });
+
+    options.SwaggerDoc("v2", new OpenApiInfo
+    {
+        Title = "TaskManagement.Api",
+        Version = "v2"
+    });
+
+    options.DocInclusionPredicate((docName, apiDesc) =>
+    {
+        return apiDesc.GroupName == docName;
+    });
+    #endregion
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -210,6 +229,42 @@ builder.Services.AddHealthChecks()
 builder.Services.AddSingleton<TaskEventPublisher>();
 builder.Services.AddSingleton<TaskEventSubscriber>();
 
+
+//version
+builder.Services
+    .AddApiVersioning(option =>
+    {
+        option.DefaultApiVersion = new ApiVersion(1, 0);
+        option.AssumeDefaultVersionWhenUnspecified = true;
+        option.ReportApiVersions = true;
+
+        option.ApiVersionReader =
+            new HeaderApiVersionReader("X-Api-Version");
+    })
+    .AddApiExplorer(options =>
+    {
+        options.GroupNameFormat = "'v'VVV";
+    });
+
+//policies
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("TaskManagementPolicy", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+/*
+AddCors(): CORS servislerini DI container'a ekledik.
+AddPolicy(): Kendi CORS policy'mizi oluşturduk.
+WithOrigins(): Sadece bu origin'e izin veriyoruz. Yani örneğimizde gelecekte:
+
+
+
+*/
+
 var app = builder.Build();
 //uygulamayı oluşturur.
 
@@ -221,10 +276,21 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint(
+            "/swagger/v1/swagger.json",
+            "TaskManagement.Api v1");
+
+        options.SwaggerEndpoint(
+            "/swagger/v2/swagger.json",
+            "TaskManagement.Api v2");
+    });
 }
 
 app.UseHttpsRedirection(); //HTTP gelirse HTTPS'e yönlendir.
+
+app.UseCors("TaskManagementPolicy"); //Biraz önce oluşturduğum TaskManagementPolicy isimli CORS kurallarını kullan.
 
 app.UseAuthentication();
 

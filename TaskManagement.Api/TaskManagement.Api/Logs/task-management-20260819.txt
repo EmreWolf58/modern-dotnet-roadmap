@@ -1,0 +1,74 @@
+[2026-08-19 08:25:55 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-19 08:25:56 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-19 08:25:56 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-19 08:25:56 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-19 08:25:56 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-19 08:25:57 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /swagger/v1/swagger.json
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/tasks" for actions - TaskManagement.Api.Controllers.V2.TasksController.Get (TaskManagement.Api),TaskManagement.Api.Controllers.V1.TasksController.Get (TaskManagement.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-08-19 08:27:29 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /swagger/v1/swagger.json
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/tasks" for actions - TaskManagement.Api.Controllers.V2.TasksController.Get (TaskManagement.Api),TaskManagement.Api.Controllers.V1.TasksController.Get (TaskManagement.Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-08-19 08:36:26 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-19 08:36:26 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-19 08:36:26 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-19 08:36:26 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-19 08:36:26 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-19 08:41:45 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-19 08:41:45 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-19 08:41:45 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-19 08:41:45 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-19 08:41:45 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-19 08:44:42 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+TaskManagement.Api.Controllers.TasksController.GetAll (TaskManagement.Api)
+TaskManagement.Api.Controllers.V1.TasksController.Get (TaskManagement.Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.SelectEndpointWithPoliciesAsync(HttpContext httpContext, IEndpointSelectorPolicy[] policies, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatch|10_1(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task matchTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2026-08-19 08:45:02 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+TaskManagement.Api.Controllers.TasksController.GetAll (TaskManagement.Api)
+TaskManagement.Api.Controllers.V1.TasksController.Get (TaskManagement.Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.SelectEndpointWithPoliciesAsync(HttpContext httpContext, IEndpointSelectorPolicy[] policies, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatch|10_1(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task matchTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2026-08-19 08:45:13 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+TaskManagement.Api.Controllers.TasksController.GetAll (TaskManagement.Api)
+TaskManagement.Api.Controllers.V1.TasksController.Get (TaskManagement.Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.SelectEndpointWithPoliciesAsync(HttpContext httpContext, IEndpointSelectorPolicy[] policies, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatch|10_1(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task matchTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2026-08-19 08:48:04 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-19 08:48:04 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-19 08:48:04 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-19 08:48:04 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-19 08:48:04 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
