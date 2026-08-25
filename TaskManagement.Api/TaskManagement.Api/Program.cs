@@ -21,6 +21,8 @@ using TaskManagement.Api.Settings;
 using TaskManagement.Api.Validators;
 using static System.Net.WebRequestMethods;
 using Asp.Versioning;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -247,23 +249,42 @@ builder.Services
     });
 
 //policies
-builder.Services.AddCors(options =>
+builder.Services.AddCors(options => 
 {
     options.AddPolicy("TaskManagementPolicy", policy =>
     {
         policy.WithOrigins("http://localhost:4200")
         .AllowAnyMethod()
         .AllowAnyHeader();
+        //.WithMethods(   //bu policies örneğiyle kısıtlamaları arttırabiliyosun.
+        //    HttpMethods.Get,
+        //    HttpMethods.Post)
+        //.WithHeaders(
+        //    "Content-Type",
+        //    "Authorization",
+        //    "X-Api-Version"
+        //    );
+
     });
 });
 /*
 AddCors(): CORS servislerini DI container'a ekledik.
 AddPolicy(): Kendi CORS policy'mizi oluşturduk.
 WithOrigins(): Sadece bu origin'e izin veriyoruz. Yani örneğimizde gelecekte:
-
-
-
 */
+
+//fixed windows ekledim.
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+    options.AddFixedWindowLimiter("fixed", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 5;
+        limiterOptions.Window = TimeSpan.FromSeconds(10);
+        limiterOptions.QueueLimit = 0;
+    });
+});
 
 var app = builder.Build();
 //uygulamayı oluşturur.
@@ -295,6 +316,9 @@ app.UseCors("TaskManagementPolicy"); //Biraz önce oluşturduğum TaskManagement
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.UseRateLimiter(); //Rate Limiting'i kullan. Yani 10 saniyede 5 istekten fazlasını kabul etme.
+
 app.MapHealthChecks("/health", new HealthCheckOptions
 {
     ResponseWriter= UIResponseWriter.WriteHealthCheckUIResponse

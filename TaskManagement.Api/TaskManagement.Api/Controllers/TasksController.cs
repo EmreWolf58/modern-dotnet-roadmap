@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Filters;
 using TaskManagement.Api.Interfaces;
-using TaskManagement.Api.Responses;
 using TaskManagement.Api.Model;
 using TaskManagement.Api.ModelBinders;
+using TaskManagement.Api.Responses;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -25,6 +26,7 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpGet]
+        [EnableRateLimiting("fixed")]
         [ServiceFilter(typeof(FirstActionFilter), Order = 1)]//test için eklendi. Order ile filtrelerin hangi sırayla çalışacağını belirleyebilirim.
         [ServiceFilter(typeof(SecondActionFilter), Order = 2)]
         public ActionResult<ApiResponse<PagedResponse<TaskDto>>> GetAll([FromQuery] TaskQuery query)
@@ -129,6 +131,7 @@ namespace TaskManagement.Api.Controllers
         {
             throw new Exception("Test exception");
         }
+
         [HttpPost("{id}/binding-test")]
         public IActionResult BindingTest([FromRoute] int id, [FromQuery] bool notify, [FromHeader (Name = "X-Client-Id")] string clientId, [FromBody] CreateTaskDto model)
         {
@@ -142,9 +145,7 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpGet("custom-filter")]
-        public IActionResult CustomFilter(
-    [ModelBinder(BinderType = typeof(TaskFilterModelBinder))]
-    TaskFilter filter)
+        public IActionResult CustomFilter( [ModelBinder(BinderType = typeof(TaskFilterModelBinder))] TaskFilter filter)
         {
             return Ok(new
             {
