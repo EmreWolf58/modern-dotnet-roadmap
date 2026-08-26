@@ -284,7 +284,44 @@ builder.Services.AddRateLimiter(options =>
         limiterOptions.Window = TimeSpan.FromSeconds(10);
         limiterOptions.QueueLimit = 0;
     });
+
+    options.AddSlidingWindowLimiter("sliding", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 6;
+        limiterOptions.Window = TimeSpan.FromSeconds(12);
+        limiterOptions.SegmentsPerWindow = 3;
+        limiterOptions.QueueLimit = 0;
+    });
+
+    options.AddTokenBucketLimiter("token", limiterOptions =>
+    {
+        limiterOptions.TokenLimit = 5; //Kovanın maksimum token kapasitesi.
+        limiterOptions.TokensPerPeriod = 2; //Her yenilenme döneminde kaç token ekleneceğini belirtir.
+        limiterOptions.ReplenishmentPeriod = TimeSpan.FromSeconds(5); //Tokenların ne sıklıkla yenileneceğini belirtir.
+        limiterOptions.AutoReplenishment = true; //Tokenların otomatik olarak yenilenmesini sağlar.
+        limiterOptions.QueueLimit = 0;
+    });
+    options.AddConcurrencyLimiter("concurrency", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 2; //aynı anda maksimum 2 request işlenebilir.
+        limiterOptions.QueueLimit = 0; //fazla request bekletilmez.
+    });
+
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>( //GlobalLimiter:Rate Limiting'i sadece attribute koyduğum endpoint'lere değil, global olarak uygula.
+        HttpContext =>
+        RateLimitPartition.GetFixedWindowLimiter(
+            partitionKey:
+            HttpContext.Connection.RemoteIpAddress?.ToString()
+            ?? "unknown",
+            factory: _ => new FixedWindowRateLimiterOptions
+            {
+                PermitLimit = 20,
+                Window = TimeSpan.FromSeconds(10),
+                QueueLimit = 0
+            }));
 });
+
+
 
 var app = builder.Build();
 //uygulamayı oluşturur.

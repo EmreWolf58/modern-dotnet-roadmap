@@ -58,6 +58,7 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        [EnableRateLimiting("sliding")]
         public ActionResult<ApiResponse<List<TaskDto>>> GetById(int id)
         {
             _logger.LogInformation("Task detayı istendi. TaskId: {TaskId}", id);
@@ -75,6 +76,7 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpPost]
+        [EnableRateLimiting("token")]
         public ActionResult<ApiResponse<TaskDto>> Create(CreateTaskDto createTaskDto)
         {
             _logger.LogInformation("Yeni task oluşturma isteği geldi. Title: {Title}", createTaskDto.Title);
@@ -152,6 +154,15 @@ namespace TaskManagement.Api.Controllers
                 filter.Status,
                 filter.Date
             });
+        }
+
+        [HttpGet("concurrency-test")]
+        [EnableRateLimiting("concurrency")]
+        public async Task<IActionResult> ConcurrencyTest()
+        {
+            await Task.Delay(5000);
+
+            return Ok("İşlem tamamlandı.");
         }
     }
 }
