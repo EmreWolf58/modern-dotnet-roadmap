@@ -125,7 +125,32 @@ namespace TaskManagement.Api.Services
                 Items = taskDtos
             };
             _logger.LogInformation("CACHE MISS: {CacheKey}", cacheKey);
-            _memoryCache.Set(cacheKey, response);
+            //var cacheOptions = new MemoryCacheEntryOptions // cacheye bir süre ekledik. Absolute Expiration 30 saniye cachede tut demek
+            //{
+            //    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30)
+            //};
+
+            //var cacheOptions = new MemoryCacheEntryOptions
+            //{
+            //    SlidingExpiration= TimeSpan.FromSeconds(10) // sliding expiration cachedeki itemin son erişiminden itibaren 30 saniye boyunca cachede kalmasını sağlar.
+            //                                                // 30 saniye boyunca erişilmezse cacheden silinir.
+            //                                                //eğer erişilirse 10 saniye devam eder.
+            //};
+
+            var cacheOptions = new MemoryCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30),
+                SlidingExpiration = TimeSpan.FromSeconds(10)
+                /*
+                Bu durumda iki kuralımız var:
+                Absolute → maksimum 30 saniye
+                Sliding → 10 saniye hiç kullanılmazsa sil
+                Hangisi önce gerçekleşirse cache expire olur.
+                */
+            };
+            _memoryCache.Set(cacheKey, response, cacheOptions); // süresiz cacheye ekler (cacheOptions olmadan varsa değişebilir durum.)
+
+            
 
             return response;
         }
