@@ -322,6 +322,9 @@ builder.Services.AddRateLimiter(options =>
 });
 
 
+//cache eklendi.
+builder.Services.AddMemoryCache(); //MemoryCache'i DI container'a ekledik. Artık uygulama boyunca MemoryCache'i kullanabiliriz
+
 
 var app = builder.Build();
 //uygulamayı oluşturur.

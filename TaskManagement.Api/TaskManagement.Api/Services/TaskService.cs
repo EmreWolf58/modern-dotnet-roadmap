@@ -7,6 +7,7 @@ using TaskManagement.Api.Settings;
 using AutoMapper;
 using TaskManagement.Api.Events;
 using TaskManagement.Api.Responses;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace TaskManagement.Api.Services
 {
@@ -15,6 +16,8 @@ namespace TaskManagement.Api.Services
         private readonly IMapper _mapper;
         private readonly ApplicationSettings _settings;
         private readonly TaskEventPublisher _taskEventPublisher;
+        private readonly IMemoryCache _memoryCache;
+        private readonly ILogger _logger;
         private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
@@ -35,16 +38,26 @@ namespace TaskManagement.Api.Services
             }
         };
 
-        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger)
         {
             _settings = settings.Value;
             _mapper = mapper;
             _taskEventPublisher = taskEventPublisher;
+            _memoryCache = memoryCache;
+            _logger = logger;
 
         }
 
         public PagedResponse<TaskDto> GetAll( TaskQuery query)
         {
+            var cacheKey = $"tasks_{query.Search}_{query.Completed}_{query.SortBy}_{query.Descending}_{query.Page}_{query.PageSize}_{query.IncludeDeleted}";
+
+            if (_memoryCache.TryGetValue(cacheKey, out PagedResponse<TaskDto>? cachedResponse)) //cacheye bakıyo varsa yolluyor hiç alta bakmadan bu bir cache hit.
+            {
+                _logger.LogInformation("CACHE HIT: {CacheKey}", cacheKey);
+                return cachedResponse!;
+            }
+
             IEnumerable<TaskModel> filteredTasks = _tasks;
 
             if (!query.IncludeDeleted)
@@ -103,7 +116,7 @@ namespace TaskManagement.Api.Services
                 totalCount / (double)query.PageSize
             );
 
-            return new PagedResponse<TaskDto>
+            var response = new PagedResponse<TaskDto>
             {
                 Page = query.Page,
                 PageSize = query.PageSize,
@@ -111,6 +124,10 @@ namespace TaskManagement.Api.Services
                 TotalPages = totalPages,
                 Items = taskDtos
             };
+            _logger.LogInformation("CACHE MISS: {CacheKey}", cacheKey);
+            _memoryCache.Set(cacheKey, response);
+
+            return response;
         }
 
         public TaskDto? GetById (int id)
