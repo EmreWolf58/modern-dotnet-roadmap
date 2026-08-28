@@ -321,6 +321,13 @@ builder.Services.AddRateLimiter(options =>
             }));
 });
 
+builder.Services.AddOutputCache(options =>
+{
+    options.AddPolicy("TasksPolicy", builder =>
+    {
+        builder.Expire(TimeSpan.FromSeconds(30)).SetVaryByQuery("*");
+    });
+});
 
 //cache eklendi.
 builder.Services.AddMemoryCache(); //MemoryCache'i DI container'a ekledik. Artık uygulama boyunca MemoryCache'i kullanabiliriz
@@ -350,6 +357,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection(); //HTTP gelirse HTTPS'e yönlendir.
+
+app.UseResponseCaching();
+app.UseOutputCache(); //OutputCache'i kullan. Yani cache'lenmiş response varsa onu döndür, yoksa action çalıştır.
 
 app.UseCors("TaskManagementPolicy"); //Biraz önce oluşturduğum TaskManagementPolicy isimli CORS kurallarını kullan.
 

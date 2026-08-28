@@ -7,6 +7,7 @@ using TaskManagement.Api.Interfaces;
 using TaskManagement.Api.Model;
 using TaskManagement.Api.ModelBinders;
 using TaskManagement.Api.Responses;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -29,6 +30,7 @@ namespace TaskManagement.Api.Controllers
         [EnableRateLimiting("fixed")]
         [ServiceFilter(typeof(FirstActionFilter), Order = 1)]//test için eklendi. Order ile filtrelerin hangi sırayla çalışacağını belirleyebilirim.
         [ServiceFilter(typeof(SecondActionFilter), Order = 2)]
+        [OutputCache(PolicyName = "TasksPolicy")]
         public ActionResult<ApiResponse<PagedResponse<TaskDto>>> GetAll([FromQuery] TaskQuery query)
         {
             _logger.LogInformation(
