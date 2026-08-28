@@ -18,6 +18,8 @@ namespace TaskManagement.Api.Services
         private readonly TaskEventPublisher _taskEventPublisher;
         private readonly IMemoryCache _memoryCache;
         private readonly ILogger _logger;
+
+        private readonly HashSet<string> _taskCacheKeys = new();
         private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
@@ -150,6 +152,8 @@ namespace TaskManagement.Api.Services
             };
             _memoryCache.Set(cacheKey, response, cacheOptions); // süresiz cacheye ekler (cacheOptions olmadan varsa değişebilir durum.)
 
+            _taskCacheKeys.Add(cacheKey);
+
             
 
             return response;
@@ -178,6 +182,8 @@ namespace TaskManagement.Api.Services
 
             _tasks.Add(task);
 
+            ClearTaskCache(); // Yeni bir task oluşturulduğunda cache'i temizle
+
             _taskEventPublisher.PublishTaskCreated(task.Title);
 
             return _mapper.Map<TaskDto>(task);
@@ -192,6 +198,8 @@ namespace TaskManagement.Api.Services
 
             _mapper.Map(updateTaskDto, task);
 
+            ClearTaskCache(); // Task güncellendiğinde cache'i temizle
+
             return _mapper.Map<TaskDto>(task);
         }
 
@@ -205,6 +213,7 @@ namespace TaskManagement.Api.Services
             task.IsDeleted = true;
             task.DeletedDate = DateTime.Now;
             
+            ClearTaskCache(); // Task silindiğinde cache'i temizle
 
             return true;
         }
@@ -228,6 +237,16 @@ namespace TaskManagement.Api.Services
                 > 5 => "Çok sayıda task var",
                 _ => "Geçersiz değer"
             };
+        }
+
+        private void ClearTaskCache()
+        {
+            foreach (var cacheKey in _taskCacheKeys)
+            {
+                _memoryCache.Remove(cacheKey);
+            }
+            _taskCacheKeys.Clear();
+            _logger.LogInformation("Task Cache invalidated");
         }
     }
 }
