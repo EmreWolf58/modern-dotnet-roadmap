@@ -7,9 +7,9 @@ namespace TaskManagement.Api.Interfaces
     {
         PagedResponse<TaskDto> GetAll(TaskQuery query);
         TaskDto? GetById(int id);
-        TaskDto Create(CreateTaskDto createdTaskDto);
-        TaskDto? Update(int id, UpdateTaskDto updateTaskDto);
-        bool Delete(int id);
+        Task<TaskDto> CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken = default);
+        Task<TaskDto?> UpdateAsync(int id, UpdateTaskDto updateTaskDto, CancellationToken cancellationToken = default);
+        Task<bool> DeleteAsync(int id,CancellationToken cancellationToken = default);
     }
 }
 /*

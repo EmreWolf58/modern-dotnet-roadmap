@@ -8,6 +8,7 @@ using AutoMapper;
 using TaskManagement.Api.Events;
 using TaskManagement.Api.Responses;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace TaskManagement.Api.Services
 {
@@ -18,8 +19,9 @@ namespace TaskManagement.Api.Services
         private readonly TaskEventPublisher _taskEventPublisher;
         private readonly IMemoryCache _memoryCache;
         private readonly ILogger _logger;
-
+        private readonly IOutputCacheStore _outputCacheStore;
         private readonly HashSet<string> _taskCacheKeys = new();
+        private readonly object _cacheLock = new();
         private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
@@ -40,13 +42,14 @@ namespace TaskManagement.Api.Services
             }
         };
 
-        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore)
         {
             _settings = settings.Value;
             _mapper = mapper;
             _taskEventPublisher = taskEventPublisher;
             _memoryCache = memoryCache;
             _logger = logger;
+            _outputCacheStore = outputCacheStore;
 
         }
 
@@ -171,7 +174,7 @@ namespace TaskManagement.Api.Services
             return _mapper.Map<TaskDto>(task);
         }
 
-        public TaskDto Create(CreateTaskDto createTaskDto)
+        public async Task<TaskDto> CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken = default)
         {
             var task = _mapper.Map<TaskModel>(createTaskDto);
 
@@ -182,14 +185,14 @@ namespace TaskManagement.Api.Services
 
             _tasks.Add(task);
 
-            ClearTaskCache(); // Yeni bir task oluşturulduğunda cache'i temizle
+            await ClearTaskCacheAsync(cancellationToken); // Yeni bir task oluşturulduğunda cache'i temizle
 
             _taskEventPublisher.PublishTaskCreated(task.Title);
 
             return _mapper.Map<TaskDto>(task);
         }
 
-        public TaskDto? Update(int id, UpdateTaskDto updateTaskDto)
+        public async Task<TaskDto?> UpdateAsync(int id, UpdateTaskDto updateTaskDto, CancellationToken cancellationToken = default)
         {
             var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
 
@@ -198,12 +201,12 @@ namespace TaskManagement.Api.Services
 
             _mapper.Map(updateTaskDto, task);
 
-            ClearTaskCache(); // Task güncellendiğinde cache'i temizle
+            await ClearTaskCacheAsync(cancellationToken); // Task güncellendiğinde cache'i temizle
 
             return _mapper.Map<TaskDto>(task);
         }
 
-        public bool Delete (int id)
+        public async Task<bool> DeleteAsync (int id, CancellationToken cancellationToken = default)
         {
             var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
 
@@ -213,7 +216,7 @@ namespace TaskManagement.Api.Services
             task.IsDeleted = true;
             task.DeletedDate = DateTime.Now;
             
-            ClearTaskCache(); // Task silindiğinde cache'i temizle
+            await ClearTaskCacheAsync(cancellationToken); // Task silindiğinde cache'i temizle
 
             return true;
         }
@@ -239,14 +242,20 @@ namespace TaskManagement.Api.Services
             };
         }
 
-        private void ClearTaskCache()
+        private async Task ClearTaskCacheAsync(CancellationToken cancellationToken = default)
         {
-            foreach (var cacheKey in _taskCacheKeys)
+            lock (_cacheLock)
             {
-                _memoryCache.Remove(cacheKey);
+                foreach (var cacheKey in _taskCacheKeys)
+                {
+                    _memoryCache.Remove(cacheKey);
+                }
+                _taskCacheKeys.Clear();
             }
-            _taskCacheKeys.Clear();
-            _logger.LogInformation("Task Cache invalidated");
+
+            await _outputCacheStore.EvictByTagAsync("tasks", cancellationToken);
+
+            _logger.LogInformation("TASK CACHE INVALIDATED: Memory + Output");
         }
     }
 }

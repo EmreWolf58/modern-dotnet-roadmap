@@ -1,0 +1,48 @@
+[2026-08-31 10:18:18 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-31 10:18:18 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-31 10:18:18 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-31 10:18:18 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-31 10:18:18 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-31 10:22:32 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-08-31 10:22:32 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-08-31 10:24:56 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-08-31 10:25:00 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-08-31 10:26:35 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-31 10:26:35 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-31 10:26:35 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-31 10:26:35 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-31 10:26:35 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-31 10:26:49 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll

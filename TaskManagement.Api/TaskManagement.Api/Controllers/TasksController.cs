@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.OutputCaching;
 
 namespace TaskManagement.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     [ServiceFilter(typeof(ActionLoggingFilter))]
@@ -79,11 +79,11 @@ namespace TaskManagement.Api.Controllers
 
         [HttpPost]
         [EnableRateLimiting("token")]
-        public ActionResult<ApiResponse<TaskDto>> Create(CreateTaskDto createTaskDto)
+        public async Task<ActionResult<ApiResponse<TaskDto>>> Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken)
         {
             _logger.LogInformation("Yeni task oluşturma isteği geldi. Title: {Title}", createTaskDto.Title);
 
-            var createdTask = _taskServices.Create(createTaskDto);
+            var createdTask = await _taskServices.CreateAsync(createTaskDto, cancellationToken);
 
             _logger.LogInformation("Yeni task oluşturuldu. TaskId: {TaskId}", createdTask.Id);
 
@@ -94,11 +94,11 @@ namespace TaskManagement.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public ActionResult<ApiResponse<TaskDto>> Update(int id, UpdateTaskDto model)
+        public async Task<ActionResult<ApiResponse<TaskDto>>> Update(int id, UpdateTaskDto model, CancellationToken cancellationToken)
         {
             _logger.LogInformation("Task güncelleme isteği geldi. TaskId: {TaskId}", id);
 
-            var result = _taskServices.Update(id, model);
+            var result = await _taskServices.UpdateAsync(id, model, cancellationToken);
 
             if (result is null)
             {
@@ -113,10 +113,10 @@ namespace TaskManagement.Api.Controllers
 
         [ServiceFilter(typeof(ResultLoggingFilter))]// test için eklendi.
         [HttpDelete("{id}")]
-        public ActionResult<ApiResponse<object>> Delete(int id)
+        public async Task<ActionResult<ApiResponse<object>>> Delete(int id, CancellationToken cancellationToken)
         {
             _logger.LogInformation("Task silme isteği geldi. TaskId: {TaskId}", id);
-            var result = _taskServices.Delete(id);
+            var result = await _taskServices.DeleteAsync(id, cancellationToken);
 
             if (!result)
             {

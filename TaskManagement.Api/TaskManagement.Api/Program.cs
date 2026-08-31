@@ -325,7 +325,9 @@ builder.Services.AddOutputCache(options =>
 {
     options.AddPolicy("TasksPolicy", builder =>
     {
-        builder.Expire(TimeSpan.FromSeconds(30)).SetVaryByQuery("*");
+        builder.Expire(TimeSpan.FromSeconds(30))
+        .SetVaryByQuery("*")
+        .Tag("tasks");
     });
 });
 
