@@ -46,3 +46,16 @@
 [2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
 [2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
 [2026-08-31 10:26:49 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-08-31 10:52:03 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-08-31 10:52:04 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-08-31 10:52:04 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-31 10:52:04 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-31 10:52:04 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-31 10:52:04 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-31 10:58:22 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-08-31 10:58:23 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-08-31 10:58:23 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-08-31 10:58:23 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-08-31 10:58:23 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-08-31 10:58:49 INF] Microsoft.Hosting.Lifetime - Application is shutting down...
+[2026-08-31 10:58:49 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService duruyor.

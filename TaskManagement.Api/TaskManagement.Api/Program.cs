@@ -23,6 +23,7 @@ using static System.Net.WebRequestMethods;
 using Asp.Versioning;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
+using TaskManagement.Api.BackgroundServices;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -333,6 +334,13 @@ builder.Services.AddOutputCache(options =>
 
 //cache eklendi.
 builder.Services.AddMemoryCache(); //MemoryCache'i DI container'a ekledik. Artık uygulama boyunca MemoryCache'i kullanabiliriz
+
+//background service ekledim.
+builder.Services.AddHostedService<ApplicationLifetimeHostedService>(); //Uygulama başlatıldığında ve durdurulduğunda loglama yapacak. BackgroundService.cs
+/*
+ AddHostedService<T>() şu anlama geliyor:
+Bu sınıf uygulamanın Hosted Service'lerinden biridir. Uygulama başlarken başlat, kapanırken durdur.
+ */
 
 
 var app = builder.Build();
