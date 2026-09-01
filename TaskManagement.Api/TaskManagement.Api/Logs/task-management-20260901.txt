@@ -1,0 +1,11 @@
+[2026-09-01 08:20:34 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-01 08:20:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-01 08:20:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background task çalışıyor. Saat: "2026-09-01T08:20:34.1991707+03:00"
+[2026-09-01 08:20:34 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-01 08:20:34 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-01 08:20:34 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-01 08:20:34 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-01 08:20:34 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-01 08:20:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background task çalışıyor. Saat: "2026-09-01T08:20:39.2253132+03:00"
+[2026-09-01 08:20:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background task çalışıyor. Saat: "2026-09-01T08:20:44.2387739+03:00"
+[2026-09-01 08:20:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background task çalışıyor. Saat: "2026-09-01T08:20:49.2428962+03:00"

@@ -1,8 +1,0 @@
-[2026-08-14 08:46:16 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
-[2026-08-14 08:46:16 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
-[2026-08-14 08:46:16 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-[2026-08-14 08:46:16 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
-[2026-08-14 08:46:16 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
-[2026-08-14 08:47:24 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
-[2026-08-14 08:47:24 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/BindingTest
-[2026-08-14 08:47:28 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/BindingTest

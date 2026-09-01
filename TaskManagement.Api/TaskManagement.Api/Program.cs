@@ -342,6 +342,8 @@ builder.Services.AddHostedService<ApplicationLifetimeHostedService>(); //Uygulam
 Bu sınıf uygulamanın Hosted Service'lerinden biridir. Uygulama başlarken başlat, kapanırken durdur.
  */
 
+//background service ekledim.
+builder.Services.AddHostedService<TaskBackgroundService>();
 
 var app = builder.Build();
 //uygulamayı oluşturur.
