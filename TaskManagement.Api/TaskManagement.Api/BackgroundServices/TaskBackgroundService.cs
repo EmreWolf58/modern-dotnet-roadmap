@@ -1,12 +1,17 @@
-﻿namespace TaskManagement.Api.BackgroundServices
+﻿using TaskManagement.Api.DTOS;
+using TaskManagement.Api.Interfaces;
+
+namespace TaskManagement.Api.BackgroundServices
 {
     public class TaskBackgroundService: BackgroundService
     {
         private readonly ILogger<TaskBackgroundService> _logger;
+        private readonly IServiceScopeFactory _scopeFactory;
 
-        public TaskBackgroundService(ILogger<TaskBackgroundService> logger)
+        public TaskBackgroundService(ILogger<TaskBackgroundService> logger, IServiceScopeFactory scopeFactory)
         {
             _logger = logger;
+            _scopeFactory = scopeFactory;
         }
         //protected: Bu metodun dışarıdan normal şekilde çağrılması için tasarlanmadığını gösteriyor. yani backgroundService.ExecuteAsync(); yapmak için değil.
 
@@ -16,12 +21,21 @@
 
             try
             {
-                while (!stoppingToken.IsCancellationRequested) //Uygulamadan "dur" sinyali gelmediği sürece çalışmaya devam et.
+                using var timer = new PeriodicTimer(TimeSpan.FromSeconds(5));
+                while (await timer.WaitForNextTickAsync(stoppingToken))
                 {
-                    _logger.LogInformation("Background task çalışıyor. Saat: {Time}", DateTime.Now);
+                    using var scope = _scopeFactory.CreateScope(); //scope oluşturduk. scope sayesinde bağımlılıkları yönetebiliyoruz. scope'u using ile sarmaladık ki işimiz bittiğinde dispose edilsin
+                    var taskService = scope.ServiceProvider.GetRequiredService<ITaskService>();
+                    var query = new TaskQuery();
 
-                    await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken); //döngü inanılmaz hızlı döner bunu engellemek için delay attık.
-                                                                              //await olmazsa thread bloke olur ve uygulama yanıt vermez. await ile thread bloke olmaz, thread başka iş yapabilir.
+                    var result = taskService.GetAll(query);
+
+
+                    _logger.LogInformation("Background Service task kontrolü yaptı. Task sayısı: {TaskCount}", result.TotalCount);
+
+                    //await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken); 
+                    //döngü inanılmaz hızlı döner bunu engellemek için delay attık.
+                    //await olmazsa thread bloke olur ve uygulama yanıt vermez. await ile thread bloke olmaz, thread başka iş yapabilir.
                 }
             }
             catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
