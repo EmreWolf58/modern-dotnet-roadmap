@@ -64,5 +64,96 @@ namespace TaskManagement.Api.Controllers
                 file.ContentType
             });
         }
+
+        [HttpPost("upload-multiple")]
+        public async Task<IActionResult> UploadMultiple (List<IFormFile> files)
+        {
+            if (files == null || files.Count ==0)
+            {
+                return BadRequest("Dosya gönderilemedi.");
+            }
+
+            var uploadedFiles = new List<object>();
+
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            foreach (var file in files)
+            {
+                if (file.Length == 0)
+                {
+                    continue; // boş dosyaları atla
+                }
+
+                if (file.Length > MaxFileSize)
+                {
+                    return BadRequest($"{file.FileName} dosyası 5 MB'dan büyük.");
+                }
+
+                var extension = Path.GetExtension(file.FileName);
+
+                if (!AllowedExtensions.Contains(extension.ToLowerInvariant()))
+                {
+                    return BadRequest($"{file.FileName} desteklenmeyen uzantıya sahip.");
+                }
+
+                if (!AllowedContentTypes.Contains(file.ContentType))
+                {
+                    return BadRequest($"{file.FileName} desteklenmeyen içerik türüne sahip.");
+                }
+
+                var safeFileName = $"{Guid.NewGuid()}{extension.ToLowerInvariant()}";
+                var filePath = Path.Combine(uploadsFolder,safeFileName);
+                using var stream = new FileStream(filePath, FileMode.Create);
+                await file.CopyToAsync(stream);
+
+                uploadedFiles.Add(new
+                {
+                    OriginalFileName = file.FileName,
+                    StoredFileName = safeFileName,
+                    file.Length,
+                    file.ContentType
+                });
+            }
+            return Ok(uploadedFiles);
+        }
+
+        [HttpGet("download/{fileName}")]
+        public IActionResult Download(string fileName)
+        {
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            if (!System.IO.File.Exists(filePath))
+            {
+                return NotFound("Dosya bulunamadı.");
+            }
+
+            //var fileBytes = System.IO.File.ReadAllBytes(filePath); // ReadAllBytes dosyanın tamamını ram e aldığı için problemli
+            //var contentType = GetContentType(fileName);
+            //return File(fileBytes, contentType, fileName);
+
+            var stream = new FileStream(filePath,FileMode.Open, FileAccess.Read);
+            var contentType = GetContentType(fileName);
+            return File(stream, contentType, fileName);
+        }
+
+        private string GetContentType(string fileName)
+        {
+            var extension = Path.GetExtension(fileName).ToLowerInvariant();
+
+            return extension switch
+            {
+                ".pdf" => "application/pdf",
+                ".jpg" => "image/jpeg",
+                ".jpeg" => "image/jpeg",
+                ".png" => "image/png",
+                _ => "application/octet-stream"
+            };
+        }
     }
 }
