@@ -24,6 +24,7 @@ using Asp.Versioning;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 using TaskManagement.Api.BackgroundServices;
+using TaskManagement.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -356,19 +357,25 @@ app.Services.GetRequiredService<TaskEventSubscriber>();
 app.UseMiddleware<ExceptionMiddleware>(); //Bu yüzden hata yakalama middleware'i genellikle pipeline'ın başında bulunur.
 app.UseMiddleware<RequestLoggingMiddleware>();
 
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI(options =>
+//    {
+//        options.SwaggerEndpoint(
+//            "/swagger/v1/swagger.json",
+//            "TaskManagement.Api v1");
+
+//        options.SwaggerEndpoint(
+//            "/swagger/v2/swagger.json",
+//            "TaskManagement.Api v2");
+//    });
+//}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint(
-            "/swagger/v1/swagger.json",
-            "TaskManagement.Api v1");
-
-        options.SwaggerEndpoint(
-            "/swagger/v2/swagger.json",
-            "TaskManagement.Api v2");
-    });
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection(); //HTTP gelirse HTTPS'e yönlendir.
@@ -389,6 +396,8 @@ app.MapHealthChecks("/health", new HealthCheckOptions
     ResponseWriter= UIResponseWriter.WriteHealthCheckUIResponse
 });
 app.MapControllers(); //Controller'ları kullan. Yani /api/tasks yada /api/users gibi endpointleri aktif et.
+
+app.MapTaskEndpoints(); //Minimal API endpointlerini kullan. Yani /minimal/tasks gibi endpointleri aktif et.
 
 app.Run(); //Artık uygulamayı çalıştır. Bu satırdan sonra API istek kabul etmeye başlar.
 

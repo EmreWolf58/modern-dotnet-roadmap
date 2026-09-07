@@ -1,0 +1,153 @@
+[2026-09-07 08:40:54 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-07 08:40:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-07 08:40:54 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-07 08:40:54 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-07 08:40:54 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-07 08:40:54 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-07 08:40:54 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-07 08:40:59 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-09-07 08:40:59 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:40:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:34 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:41:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:41:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:41:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:54:51 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-07 08:54:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-07 08:54:51 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-07 08:54:51 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-07 08:54:51 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-07 08:54:51 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-07 08:54:51 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-07 08:54:56 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-09-07 08:54:56 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:54:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:06 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:16 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:21 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:21 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:31 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:55:31 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:36 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:36 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:41 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:41 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:46 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:46 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:51 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:55:56 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:55:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:06 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:56:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:16 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:21 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:21 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:31 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:31 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:36 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:36 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:41 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:56:41 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:46 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:46 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:51 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:56:56 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:56:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:06 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:27 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-07 08:57:27 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-07 08:57:27 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-07 08:57:27 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-07 08:57:28 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-07 08:57:28 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-07 08:57:28 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-07 08:57:32 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-09-07 08:57:32 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:57:32 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:37 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:42 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:47 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:52 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:52 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:57:57 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:57:57 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:58:02 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 08:58:02 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 08:58:07 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 08:58:07 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:08 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-07 09:00:08 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-07 09:00:08 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-07 09:00:08 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-07 09:00:08 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-07 09:00:08 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-07 09:00:08 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-07 09:00:13 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-09-07 09:00:13 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 09:00:13 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:18 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:18 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:23 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:23 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:28 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:33 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:33 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:38 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:38 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:41 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___1_False_1_10_False
+[2026-09-07 09:00:43 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:43 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:48 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 09:00:48 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:53 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-07 09:00:53 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-07 09:00:55 INF] TaskManagement.Api.Services.TaskService - TASK CACHE INVALIDATED: Memory + Output
+[2026-09-07 09:00:55 INF] TaskManagement.Api.Events.TaskEventSubscriber - Event Yakalandı. Yeni task oluşturuldu: string
+[2026-09-07 09:00:58 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-07 09:00:58 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
