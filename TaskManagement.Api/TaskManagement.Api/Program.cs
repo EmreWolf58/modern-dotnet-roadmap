@@ -345,6 +345,9 @@ Bu sınıf uygulamanın Hosted Service'lerinden biridir. Uygulama başlarken ba�
 //background service ekledim.
 builder.Services.AddHostedService<TaskBackgroundService>();
 
+//File service kaydı
+builder.Services.AddScoped<IFileService, FileService>();
+
 var app = builder.Build();
 //uygulamayı oluşturur.
 
