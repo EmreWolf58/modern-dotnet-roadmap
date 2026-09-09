@@ -1,13 +1,19 @@
+using Asp.Versioning;
 using AutoMapper;
 using FluentValidation;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using System.Reflection;
 using System.Text;
+using System.Threading.RateLimiting;
+using TaskManagement.Api.BackgroundServices;
+using TaskManagement.Api.Endpoints;
 using TaskManagement.Api.Events;
 using TaskManagement.Api.Filters;
 using TaskManagement.Api.HealthChecks;
@@ -20,11 +26,6 @@ using TaskManagement.Api.Services;
 using TaskManagement.Api.Settings;
 using TaskManagement.Api.Validators;
 using static System.Net.WebRequestMethods;
-using Asp.Versioning;
-using Microsoft.AspNetCore.RateLimiting;
-using System.Threading.RateLimiting;
-using TaskManagement.Api.BackgroundServices;
-using TaskManagement.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 /*
@@ -157,6 +158,9 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
         Description = "JWT Token giriniz."
     });
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
