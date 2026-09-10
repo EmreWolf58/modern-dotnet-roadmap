@@ -11,6 +11,8 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Reflection;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
 using TaskManagement.Api.BackgroundServices;
 using TaskManagement.Api.Endpoints;
@@ -54,6 +56,13 @@ builder.Host.UseSerilog((context, configuration) =>
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ValidationFilter>(); //Controller action’ı çalışmadan önce devreye girer. ValidationFilter.cs
+
+}).AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase; //jsonlerı serilize ederken camelCase yapar. Yani FirstName yerine firstName olur.
+    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull; //null gönderiler probları jsondan çıkartır.
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); //enumları çevirmek için ekledik.
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)); // enumları camelCase olarak çevirmek için ekledik.
 });
 builder.Services.AddScoped<ActionLoggingFilter>();
 

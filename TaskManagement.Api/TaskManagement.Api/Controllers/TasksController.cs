@@ -8,6 +8,7 @@ using TaskManagement.Api.Model;
 using TaskManagement.Api.ModelBinders;
 using TaskManagement.Api.Responses;
 using Microsoft.AspNetCore.OutputCaching;
+using System.Text.Json;
 
 namespace TaskManagement.Api.Controllers
 {
@@ -165,6 +166,36 @@ namespace TaskManagement.Api.Controllers
             await Task.Delay(5000);
 
             return Ok("İşlem tamamlandı.");
+        }
+
+        [HttpGet("serializer-test")]
+        public async Task<IActionResult> SerializerTest()
+        {
+            var task = new
+            {
+                Id = 1,
+                Title = "ASP.NET Core",
+                Completed = false
+            };
+
+            var json = JsonSerializer.Serialize(task); //serilize: jsona döndürür.
+
+            var DeseriJson = JsonSerializer.Deserialize<TaskDto>(json); //deserilize: jsonu tekrar objeye döndürür.
+
+            return Ok(json);
+        }
+
+        [HttpGet("json-options-test")]
+        public IActionResult JsonOptionsTest()
+        {
+            var data = new
+            {
+                Id = 1,
+                TaskName = "ASP.NET Core öğren",
+                Description = (string?)null,
+                Priority = TaskEnum.High
+            };
+            return Ok(data);
         }
     }
 }

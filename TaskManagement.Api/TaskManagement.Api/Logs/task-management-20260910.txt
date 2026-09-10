@@ -1,0 +1,16 @@
+[2026-09-10 12:43:12 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-09-10 12:43:12 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-09-10 12:43:12 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-09-10 12:43:12 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-09-10 12:43:12 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-09-10 12:43:12 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-09-10 12:43:12 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-09-10 12:43:17 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-09-10 12:43:17 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-09-10 12:43:17 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-10 12:43:22 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-10 12:43:22 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-09-10 12:43:27 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/JsonOptionsTest
+[2026-09-10 12:43:27 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/JsonOptionsTest
+[2026-09-10 12:43:27 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-09-10 12:43:27 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
