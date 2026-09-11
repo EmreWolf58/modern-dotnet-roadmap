@@ -362,6 +362,23 @@ builder.Services.AddHostedService<TaskBackgroundService>();
 //File service kaydı
 builder.Services.AddScoped<IFileService, FileService>();
 
+//http client servis kaydı
+//builder.Services.AddHttpClient();
+
+//builder.Services.AddScoped<IExternalTodoService, ExternalTodoService>();
+
+//named http client JsonPlaceholder isimli bir client oluşturuyoruz
+builder.Services.AddHttpClient("JsonPlaceholder", client =>
+{
+    client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+});// artık url i heryerde yazmamıza gerek yok. sadece client.GetAsync("todos/1") gibi kullanabiliriz.
+
+//typed client 
+builder.Services.AddHttpClient<IExternalTodoService, ExternalTodoService>(client =>
+{
+    client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+});
+
 var app = builder.Build();
 //uygulamayı oluşturur.
 
