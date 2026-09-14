@@ -377,6 +377,8 @@ builder.Services.AddHttpClient("JsonPlaceholder", client =>
 builder.Services.AddHttpClient<IExternalTodoService, ExternalTodoService>(client =>
 {
     client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+    client.DefaultRequestHeaders.Add("Accept","application/json");
+    client.Timeout = TimeSpan.FromSeconds(1); //5 saniyeyi aşarsa timeout olur. yani 5 saniyeden uzun sürerse hata döndürür.
 });
 
 var app = builder.Build();
