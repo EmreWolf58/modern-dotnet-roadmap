@@ -27,6 +27,8 @@ using TaskManagement.Api.Responses;
 using TaskManagement.Api.Services;
 using TaskManagement.Api.Settings;
 using TaskManagement.Api.Validators;
+using Microsoft.EntityFrameworkCore;
+using TaskManagement.Api.Data;
 using static System.Net.WebRequestMethods;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -379,6 +381,12 @@ builder.Services.AddHttpClient<IExternalTodoService, ExternalTodoService>(client
     client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
     client.DefaultRequestHeaders.Add("Accept","application/json");
     client.Timeout = TimeSpan.FromSeconds(1); //5 saniyeyi aşarsa timeout olur. yani 5 saniyeden uzun sürerse hata döndürür.
+});
+
+//connection DI
+builder.Services.AddDbContext<AppDbContext>(options => //AppDbContext'i ASP.NET Core'un Dependency Injection container'ına kaydeder.
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); //AppDbContext istediğim zaman bunu EF Core ile oluştur ve SQL Server kullan.
 });
 
 var app = builder.Build();

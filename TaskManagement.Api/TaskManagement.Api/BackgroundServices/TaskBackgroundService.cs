@@ -28,7 +28,7 @@ namespace TaskManagement.Api.BackgroundServices
                     var taskService = scope.ServiceProvider.GetRequiredService<ITaskService>();
                     var query = new TaskQuery();
 
-                    var result = taskService.GetAll(query);
+                    var result = await taskService.GetAllAsync(query);
 
 
                     _logger.LogInformation("Background Service task kontrolü yaptı. Task sayısı: {TaskCount}", result.TotalCount);

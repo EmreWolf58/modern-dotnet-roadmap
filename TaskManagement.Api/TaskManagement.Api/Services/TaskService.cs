@@ -9,6 +9,8 @@ using TaskManagement.Api.Events;
 using TaskManagement.Api.Responses;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.AspNetCore.OutputCaching;
+using Microsoft.EntityFrameworkCore;
+using TaskManagement.Api.Data;
 
 namespace TaskManagement.Api.Services
 {
@@ -22,6 +24,7 @@ namespace TaskManagement.Api.Services
         private readonly IOutputCacheStore _outputCacheStore;
         private readonly HashSet<string> _taskCacheKeys = new();
         private readonly object _cacheLock = new();
+        private readonly AppDbContext _context;
         private readonly List<TaskModel> _tasks = new()
         {
             new TaskModel
@@ -42,7 +45,7 @@ namespace TaskManagement.Api.Services
             }
         };
 
-        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore, AppDbContext context)
         {
             _settings = settings.Value;
             _mapper = mapper;
@@ -50,10 +53,11 @@ namespace TaskManagement.Api.Services
             _memoryCache = memoryCache;
             _logger = logger;
             _outputCacheStore = outputCacheStore;
+            _context = context;
 
         }
 
-        public PagedResponse<TaskDto> GetAll( TaskQuery query)
+        public async Task<PagedResponse<TaskDto>> GetAllAsync (TaskQuery query)
         {
             var cacheKey = $"tasks_{query.Search}_{query.Completed}_{query.SortBy}_{query.Descending}_{query.Page}_{query.PageSize}_{query.IncludeDeleted}";
 
@@ -63,7 +67,7 @@ namespace TaskManagement.Api.Services
                 return cachedResponse!;
             }
 
-            IEnumerable<TaskModel> filteredTasks = _tasks;
+            IQueryable<TaskModel> filteredTasks = _context.Tasks;
 
             if (!query.IncludeDeleted)
             {
@@ -72,16 +76,7 @@ namespace TaskManagement.Api.Services
 
             if (!string.IsNullOrWhiteSpace(query.Search))
             {
-                filteredTasks = filteredTasks.Where(task =>
-                    task.Title.Contains(
-                        query.Search,
-                        StringComparison.OrdinalIgnoreCase
-                    ) ||
-                    task.Description.Contains(
-                        query.Search,
-                        StringComparison.OrdinalIgnoreCase
-                    )
-                );
+                filteredTasks = filteredTasks.Where(task => task.Title.Contains(query.Search) || task.Description.Contains(query.Search));
             }
 
             if (query.Completed.HasValue)
@@ -108,12 +103,12 @@ namespace TaskManagement.Api.Services
                 _ => filteredTasks.OrderBy(task => task.Id)
             };
 
-            var totalCount = filteredTasks.Count();
+            var totalCount = await filteredTasks.CountAsync();
 
-            var pagedTasks = filteredTasks
+            var pagedTasks = await filteredTasks
                 .Skip((query.Page - 1) * query.PageSize)
                 .Take(query.PageSize)
-                .ToList();
+                .ToListAsync();
 
             var taskDtos = _mapper.Map<List<TaskDto>>(pagedTasks);
 
@@ -162,9 +157,9 @@ namespace TaskManagement.Api.Services
             return response;
         }
 
-        public TaskDto? GetById (int id)
+        public async Task<TaskDto?> GetByIdAsync(int id)
         {
-            var task = _tasks.FirstOrDefault(task => task.Id == id && !task.IsDeleted);
+            var task = await _context.Tasks.FirstOrDefaultAsync(task => task.Id == id && !task.IsDeleted);
 
             if (task is null)
             {
@@ -178,12 +173,12 @@ namespace TaskManagement.Api.Services
         {
             var task = _mapper.Map<TaskModel>(createTaskDto);
 
-            task.Id = _tasks.Any() ? _tasks.Max(x => x.Id) + 1 : 1;
-
             task.IsCompleted = false;
             task.CreatedDate = DateTime.Now;
 
-            _tasks.Add(task);
+            await _context.Tasks.AddAsync(task,cancellationToken);
+
+            await _context.SaveChangesAsync();
 
             await ClearTaskCacheAsync(cancellationToken); // Yeni bir task oluşturulduğunda cache'i temizle
 

@@ -32,7 +32,7 @@ namespace TaskManagement.Api.Controllers
         [ServiceFilter(typeof(FirstActionFilter), Order = 1)]//test için eklendi. Order ile filtrelerin hangi sırayla çalışacağını belirleyebilirim.
         [ServiceFilter(typeof(SecondActionFilter), Order = 2)]
         [OutputCache(PolicyName = "TasksPolicy")]
-        public ActionResult<ApiResponse<PagedResponse<TaskDto>>> GetAll([FromQuery] TaskQuery query)
+        public async Task<ActionResult<ApiResponse<PagedResponse<TaskDto>>>> GetAll([FromQuery] TaskQuery query)
         {
             _logger.LogInformation(
         "Task listesi istendi. Page: {Page}, PageSize: {PageSize}, " +
@@ -47,7 +47,7 @@ namespace TaskManagement.Api.Controllers
         query.IncludeDeleted
     );
 
-            var result = _taskServices.GetAll(query);
+            var result = await _taskServices.GetAllAsync(query);
 
             _logger.LogInformation(
         "{ListedTaskCount} adet task listelendi. " +
@@ -62,10 +62,10 @@ namespace TaskManagement.Api.Controllers
 
         [HttpGet("{id}")]
         [EnableRateLimiting("sliding")]
-        public ActionResult<ApiResponse<List<TaskDto>>> GetById(int id)
+        public async Task<ActionResult<ApiResponse<List<TaskDto>>>> GetById(int id)
         {
             _logger.LogInformation("Task detayı istendi. TaskId: {TaskId}", id);
-            var task = _taskServices.GetById(id);
+            var task = await _taskServices.GetByIdAsync(id);
 
             if (task is null)
             {

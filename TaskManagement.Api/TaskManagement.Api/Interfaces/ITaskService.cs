@@ -5,8 +5,8 @@ namespace TaskManagement.Api.Interfaces
 {
     public interface ITaskService
     {
-        PagedResponse<TaskDto> GetAll(TaskQuery query);
-        TaskDto? GetById(int id);
+        Task<PagedResponse<TaskDto>> GetAllAsync(TaskQuery query);
+        Task<TaskDto?> GetByIdAsync(int id);
         Task<TaskDto> CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken = default);
         Task<TaskDto?> UpdateAsync(int id, UpdateTaskDto updateTaskDto, CancellationToken cancellationToken = default);
         Task<bool> DeleteAsync(int id,CancellationToken cancellationToken = default);

@@ -15,7 +15,7 @@ namespace TaskManagement.Api.Endpoints
 
             group.MapGet("/", ([AsParameters] TaskQuery query, ITaskService taskService) =>
             {
-                var result = taskService.GetAll(query);
+                var result = taskService.GetAllAsync(query);
                 return Results.Ok(result);
             });
 
@@ -30,7 +30,7 @@ namespace TaskManagement.Api.Endpoints
 
             group.MapGet("/{id:int}", (int id, ITaskService taskService) =>
             {
-                var task = taskService.GetById(id);
+                var task = taskService.GetByIdAsync(id);
 
                 if (task is null)
                 {
