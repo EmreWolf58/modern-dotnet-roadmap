@@ -79,7 +79,7 @@ builder.Services.AddScoped<SecondActionFilter>();
 
 builder.Services.AddHealthChecks(); // Health Check'ler canlı ortamlarda (Azure, AWS, Kubernetes, Docker vb.) uygulamanın çalışır durumda olup olmadığını anlamak için kullanılır.
 
-builder.Services.AddSingleton<ITaskService ,TaskService>(); // “Biri benden ITaskService isterse, ona TaskService ver.”
+builder.Services.AddScoped<ITaskService ,TaskService>(); // “Biri benden ITaskService isterse, ona TaskService ver.”
 /*
  "TaskService sınıfını uygulamanın Dependency Injection (DI) sistemine kaydet."
 
