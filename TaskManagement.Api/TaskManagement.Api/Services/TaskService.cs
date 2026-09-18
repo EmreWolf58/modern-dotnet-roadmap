@@ -25,25 +25,6 @@ namespace TaskManagement.Api.Services
         private readonly HashSet<string> _taskCacheKeys = new();
         private readonly object _cacheLock = new();
         private readonly AppDbContext _context;
-        private readonly List<TaskModel> _tasks = new()
-        {
-            new TaskModel
-            {
-                Id = 1,
-                Title = "ASP.NET Core öğren",
-                Description = "Controller ve routing konularını tekrar et.",
-                IsCompleted = false,
-                CreatedDate = DateTime.Now
-            },
-            new TaskModel
-            {
-                Id = 2,
-                Title = "CRUD endpointlerini yaz",
-                Description = "GET, POST, PUT, DELETE endpointlerini tamamla.",
-                IsCompleted = true,
-                CreatedDate = DateTime.Now
-            }
-        };
 
         public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore, AppDbContext context)
         {
@@ -189,30 +170,28 @@ namespace TaskManagement.Api.Services
 
         public async Task<TaskDto?> UpdateAsync(int id, UpdateTaskDto updateTaskDto, CancellationToken cancellationToken = default)
         {
-            var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
+            var task = await _context.Tasks.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted, cancellationToken);
 
             if (task is null)
                 return null;
 
             _mapper.Map(updateTaskDto, task);
-
-            await ClearTaskCacheAsync(cancellationToken); // Task güncellendiğinde cache'i temizle
-
+            await _context.SaveChangesAsync(cancellationToken);
+            await ClearTaskCacheAsync(cancellationToken); // Task güncellendiğinde cache'i Stemizle
             return _mapper.Map<TaskDto>(task);
         }
 
         public async Task<bool> DeleteAsync (int id, CancellationToken cancellationToken = default)
         {
-            var task = _tasks.FirstOrDefault(x => x.Id == id && !x.IsDeleted);
+            var task =await _context.Tasks.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted, cancellationToken);
 
             if (task is null)
                 return false;
 
             task.IsDeleted = true;
             task.DeletedDate = DateTime.Now;
-            
+            await _context.SaveChangesAsync(cancellationToken);
             await ClearTaskCacheAsync(cancellationToken); // Task silindiğinde cache'i temizle
-
             return true;
         }
 
