@@ -2,8 +2,8 @@
 {
     public class ApplicationSettings
     {
-        public string ApplicationName { get; set; }
-        public string Version { get; set; }
+        public string? ApplicationName { get; set; }
+        public string? Version { get; set; }
         public int MaxTaskCount { get; set; }
     }
 }

@@ -9,7 +9,7 @@
 
         public static string NormalizeText(this string? value)
         {
-            return value.Trim();
+            return value?.Trim() ?? string.Empty;
         }
     }
 }
