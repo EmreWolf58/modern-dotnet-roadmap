@@ -12,5 +12,30 @@ namespace TaskManagement.Api.Data
 
         public DbSet<TaskModel> Tasks { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<TaskModel>().HasData(new TaskModel
+            {
+                Id=1,
+                Title = "Master EF Core",
+                Description = "Learn Entity Framework Core basics",
+                IsCompleted = false,
+                CreatedDate = new DateTime(2026, 9, 22),
+                IsDeleted = false,
+                DeletedDate = null,
+                Priority = 1
+            },
+            new TaskModel
+            {
+                Id = 2,
+                Title = "Learn Migrations",
+                Description = "Practice EF Core migrations",
+                IsCompleted = false,
+                CreatedDate = new DateTime(2026, 9, 22),
+                IsDeleted = false,
+                DeletedDate = null,
+                Priority = 2
+            });
+        }
     }
 }
