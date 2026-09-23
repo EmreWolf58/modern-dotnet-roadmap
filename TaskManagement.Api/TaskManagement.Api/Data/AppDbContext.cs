@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Model;
+using TaskManagement.Api.Model.TaskModels;
 
 namespace TaskManagement.Api.Data
 {
@@ -11,6 +12,7 @@ namespace TaskManagement.Api.Data
         }
 
         public DbSet<TaskModel> Tasks { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

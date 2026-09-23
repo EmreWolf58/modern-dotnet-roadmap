@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using TaskManagement.Api.DTOS;
-using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Model.TaskModels;
 using TaskManagement.Api.Interfaces;
 using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;

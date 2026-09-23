@@ -1,4 +1,4 @@
-﻿namespace TaskManagement.Api.Model.TaskModel
+﻿namespace TaskManagement.Api.Model.TaskModels
 {
     public class TaskModel
     {
@@ -10,5 +10,7 @@
         public bool IsDeleted { get; set; }
         public DateTime? DeletedDate { get; set; }
         public int Priority { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; } = null!;
     }
 }

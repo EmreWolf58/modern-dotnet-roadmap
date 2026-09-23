@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using TaskManagement.Api.DTOS;
-using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Model.TaskModels;
 
 namespace TaskManagement.Api.Mapping
 {

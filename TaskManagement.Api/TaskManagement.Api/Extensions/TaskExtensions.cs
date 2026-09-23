@@ -1,5 +1,5 @@
 ﻿
-using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Model.TaskModels;
 
 namespace TaskManagement.Api.Extensions
 {

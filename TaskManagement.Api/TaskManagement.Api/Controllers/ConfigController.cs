@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 using TaskManagement.Api.Settings;
 using TaskManagement.Api.DTOS;
 using TaskManagement.Api.Helpers;
-using TaskManagement.Api.Model.TaskModel;
+using TaskManagement.Api.Model.TaskModels;
 
 namespace TaskManagement.Api.Controllers
 {
