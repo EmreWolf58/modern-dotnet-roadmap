@@ -25,7 +25,8 @@ namespace TaskManagement.Api.Data
                 CreatedDate = new DateTime(2026, 9, 22),
                 IsDeleted = false,
                 DeletedDate = null,
-                Priority = 1
+                Priority = 1,
+                UserId = 1
             },
             new TaskModel
             {
@@ -36,7 +37,15 @@ namespace TaskManagement.Api.Data
                 CreatedDate = new DateTime(2026, 9, 22),
                 IsDeleted = false,
                 DeletedDate = null,
-                Priority = 2
+                Priority = 2,
+                UserId = 1
+            });
+
+            modelBuilder.Entity<User>().HasData(new User
+            {
+                Id = 1,
+                Username = "admin",
+                Email = "admin@taskmanagement.com"
             });
         }
     }
