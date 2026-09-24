@@ -8,5 +8,6 @@ namespace TaskManagement.Api.Model
         public string Username { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public ICollection<TaskModel> Tasks { get; set; } = new List<TaskModel>();
+        public UserProfile? Profile { get; set; }
     }
 }

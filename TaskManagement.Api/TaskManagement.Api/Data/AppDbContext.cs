@@ -13,6 +13,7 @@ namespace TaskManagement.Api.Data
 
         public DbSet<TaskModel> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
