@@ -19,6 +19,24 @@ namespace TaskManagement.Api.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            #region TaskModel Config
+            modelBuilder.Entity<TaskModel>().Property(x => x.Title).IsRequired().HasMaxLength(200);
+            modelBuilder.Entity<TaskModel>().Property(x => x.Description).HasMaxLength(1000);
+            modelBuilder.Entity<TaskModel>().Property(x => x.CreatedDate).HasColumnName("CreatedAt").HasColumnType("datetime2");
+            #endregion
+            #region User Config
+            modelBuilder.Entity<User>().Property(x => x.Username).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<User>().Property(x => x.Email).IsRequired().HasMaxLength(200);
+            #endregion
+            #region Comment Config
+            modelBuilder.Entity<Comment>().Property(x => x.Content).IsRequired().HasMaxLength(1000);
+            modelBuilder.Entity<Comment>().Property(x => x.CreatedDate).HasColumnType("datetime2");
+            #endregion
+            #region Tag Config
+            modelBuilder.Entity<Tag>().Property(x => x.Name).IsRequired().HasMaxLength(100);
+            #endregion
+
+
             modelBuilder.Entity<TaskModel>().HasData(new TaskModel
             {
                 Id=1,
