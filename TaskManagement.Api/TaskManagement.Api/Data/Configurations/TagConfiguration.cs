@@ -1,0 +1,14 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using TaskManagement.Api.Model;
+
+namespace TaskManagement.Api.Data.Configurations
+{
+    public class TagConfiguration: IEntityTypeConfiguration<Tag>
+    {
+        public void Configure(EntityTypeBuilder<Tag> builder)
+        {
+            builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
+        }
+    }
+}
