@@ -21,6 +21,7 @@ namespace TaskManagement.Api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); //Miras aldığımız üst sınıfın OnModelCreating() metodunu çağırır.
+
             //Artık yeni bir configuration sınıfı oluşturduğunda AppDbContext içerisine manuel olarak eklemen gerekmeyecek.
             //Aynı assembly içerisinde uygun şekilde tanımlanmış olması yeterli.
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);

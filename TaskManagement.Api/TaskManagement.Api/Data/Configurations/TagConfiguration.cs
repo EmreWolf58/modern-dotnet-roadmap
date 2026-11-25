@@ -8,6 +8,8 @@ namespace TaskManagement.Api.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Tag> builder)
         {
+            builder.ToTable("Tags");
+
             builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
         }
     }
