@@ -38,6 +38,14 @@ namespace TaskManagement.Api.Data.Configurations
             builder.Property(x => x.Description).HasMaxLength(1000);
             builder.Property(x => x.CreatedDate).HasColumnName("CreatedAt").HasColumnType("datetime2");
 
+            builder.HasOne(x => x.User).WithMany(x => x.Tasks).HasForeignKey(x => x.UserId).IsRequired().OnDelete(DeleteBehavior.Restrict);
+            builder.HasMany(x => x.Tags).WithMany(x => x.Tasks);
+            /*
+             HasOne: Bir TaskModel'in bir tane User'ı vardır.
+            WithMany():Bir User'ın birden fazla TaskModel'i olabilir.
+            HasForeignKey():
+            */
+
             builder.HasData(new TaskModel
             {
                 Id = 1,

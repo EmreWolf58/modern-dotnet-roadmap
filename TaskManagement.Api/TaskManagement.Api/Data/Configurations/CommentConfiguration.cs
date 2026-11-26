@@ -14,6 +14,8 @@ namespace TaskManagement.Api.Data.Configurations
 
             builder.Property(x => x.Content).IsRequired().HasMaxLength(1000);
             builder.Property(x => x.CreatedDate).HasColumnType("datetime2");
+
+            builder.HasOne(x => x.Task).WithMany(x => x.Comments).HasForeignKey(x => x.TaskId).IsRequired().OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
