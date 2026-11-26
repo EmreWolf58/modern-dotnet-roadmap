@@ -9,6 +9,8 @@ namespace TaskManagement.Api.Data.Configurations
         public void Configure(EntityTypeBuilder<Comment> builder)
         {
             builder.ToTable("Comments");
+            builder.HasKey(x => x.Id);
+
 
             builder.Property(x => x.Content).IsRequired().HasMaxLength(1000);
             builder.Property(x => x.CreatedDate).HasColumnType("datetime2");

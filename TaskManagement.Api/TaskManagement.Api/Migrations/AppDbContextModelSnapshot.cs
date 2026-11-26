@@ -60,7 +60,7 @@ namespace TaskManagement.Api.Migrations
 
                     b.HasIndex("TaskId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("TaskManagement.Api.Model.Tag", b =>
@@ -78,7 +78,10 @@ namespace TaskManagement.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("TaskManagement.Api.Model.TaskModels.TaskModel", b =>
@@ -120,9 +123,11 @@ namespace TaskManagement.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("Title");
 
-                    b.ToTable("Tasks");
+                    b.HasIndex("UserId", "IsCompleted");
+
+                    b.ToTable("Tasks", (string)null);
 
                     b.HasData(
                         new
@@ -169,7 +174,13 @@ namespace TaskManagement.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Username")
+                        .IsUnique();
+
+                    b.ToTable("Users", (string)null);
 
                     b.HasData(
                         new

@@ -10,6 +10,14 @@ namespace TaskManagement.Api.Data.Configurations
         public void Configure(EntityTypeBuilder<TaskModel> builder) //EntityTypeBuilder<TaskModel> :TaskModel entity'sinin yapılandırılmasını sağlayan nesnedir.
         {
             builder.ToTable("Tasks");
+            builder.HasKey(x => x.Id); //TaskModel entity'sinin Primary Key alanı Id property'sidir.
+            builder.HasIndex(x => x.Title);
+
+            builder.HasIndex(x => new // 2 alanlı index oluşturmak için HasIndex metodu kullanılır
+            {
+                x.UserId,
+                x.IsCompleted
+            });
             /*
              şöyle yazıyorduk:
                 modelBuilder.Entity<TaskModel>()

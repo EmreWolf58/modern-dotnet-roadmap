@@ -11,6 +11,9 @@ namespace TaskManagement.Api.Data.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("Users");
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.Email).IsUnique(); //Artık aynı Email adresiyle ikinci bir kullanıcı oluşturulmaya çalışılırsa veritabanı buna izin vermeyecektir.
+            builder.HasIndex(x => x.Username).IsUnique();
 
             builder.Property(x => x.Username).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Email).IsRequired().HasMaxLength(200);
