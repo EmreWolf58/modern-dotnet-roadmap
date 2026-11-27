@@ -9,8 +9,13 @@ namespace TaskManagement.Api.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<TaskModel> builder) //EntityTypeBuilder<TaskModel> :TaskModel entity'sinin yapılandırılmasını sağlayan nesnedir.
         {
+            // Table Mapping
             builder.ToTable("Tasks");
+
+            // Primary Key
             builder.HasKey(x => x.Id); //TaskModel entity'sinin Primary Key alanı Id property'sidir.
+
+            // Indexes
             builder.HasIndex(x => x.Title);
 
             builder.HasIndex(x => new // 2 alanlı index oluşturmak için HasIndex metodu kullanılır
@@ -34,10 +39,12 @@ namespace TaskManagement.Api.Data.Configurations
             Çünkü builder zaten TaskModel entity'sini temsil ediyor.
              */
 
+            // Properties
             builder.Property(x => x.Title).IsRequired().HasMaxLength(200);
             builder.Property(x => x.Description).HasMaxLength(1000);
             builder.Property(x => x.CreatedDate).HasColumnName("CreatedAt").HasColumnType("datetime2");
 
+            // Relationships
             builder.HasOne(x => x.User).WithMany(x => x.Tasks).HasForeignKey(x => x.UserId).IsRequired().OnDelete(DeleteBehavior.Restrict);
             builder.HasMany(x => x.Tags).WithMany(x => x.Tasks);
             /*
@@ -46,6 +53,7 @@ namespace TaskManagement.Api.Data.Configurations
             HasForeignKey():
             */
 
+            // Seed Data
             builder.HasData(new TaskModel
             {
                 Id = 1,

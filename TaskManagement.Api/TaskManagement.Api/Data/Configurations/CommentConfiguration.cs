@@ -8,13 +8,17 @@ namespace TaskManagement.Api.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Comment> builder)
         {
+            // Table Mapping
             builder.ToTable("Comments");
+
+            // Primary Key
             builder.HasKey(x => x.Id);
 
-
+            // Properties
             builder.Property(x => x.Content).IsRequired().HasMaxLength(1000);
             builder.Property(x => x.CreatedDate).HasColumnType("datetime2");
 
+            // Relationships
             builder.HasOne(x => x.Task).WithMany(x => x.Comments).HasForeignKey(x => x.TaskId).IsRequired().OnDelete(DeleteBehavior.Cascade);
         }
     }

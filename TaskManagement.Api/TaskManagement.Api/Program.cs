@@ -364,6 +364,10 @@ builder.Services.AddHostedService<TaskBackgroundService>();
 //File service kaydı
 builder.Services.AddScoped<IFileService, FileService>();
 
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+
 //http client servis kaydı
 //builder.Services.AddHttpClient();
 

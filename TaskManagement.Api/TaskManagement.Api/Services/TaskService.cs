@@ -25,8 +25,9 @@ namespace TaskManagement.Api.Services
         private readonly HashSet<string> _taskCacheKeys = new();
         private readonly object _cacheLock = new();
         private readonly AppDbContext _context;
+        private readonly ICurrentUserService _currentUserService;
 
-        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore, AppDbContext context)
+        public TaskService(IOptions<ApplicationSettings> settings, IMapper mapper, TaskEventPublisher taskEventPublisher, IMemoryCache memoryCache, ILogger<TaskService> logger, IOutputCacheStore outputCacheStore, AppDbContext context, ICurrentUserService currentUserService)
         {
             _settings = settings.Value;
             _mapper = mapper;
@@ -35,7 +36,7 @@ namespace TaskManagement.Api.Services
             _logger = logger;
             _outputCacheStore = outputCacheStore;
             _context = context;
-
+            _currentUserService = currentUserService;
         }
 
         public async Task<PagedResponse<TaskDto>> GetAllAsync (TaskQuery query)
@@ -156,6 +157,7 @@ namespace TaskManagement.Api.Services
 
             task.IsCompleted = false;
             task.CreatedDate = DateTime.Now;
+            task.UserId = _currentUserService.UserId;
 
             await _context.Tasks.AddAsync(task,cancellationToken);
 

@@ -1,0 +1,1421 @@
+[2026-11-27 16:09:41 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-11-27 16:09:41 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-11-27 16:09:41 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-11-27 16:09:41 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-11-27 16:09:41 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-11-27 16:09:41 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-11-27 16:09:41 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-11-27 16:09:46 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-11-27 16:09:47 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:09:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:09:51 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:09:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:09:56 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:09:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:06 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:16 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:21 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:10:21 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:31 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:31 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:36 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:36 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:41 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:41 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:46 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:46 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:51 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:10:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:10:56 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:10:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:06 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:16 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:21 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:21 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:31 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:11:31 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:36 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:36 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:41 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:41 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:46 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:46 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:51 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:11:56 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:11:56 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:01 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:01 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:06 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:12:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:11 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:11 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:16 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:21 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:21 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:31 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:31 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:12:36 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:12:36 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:16:39 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-11-27 16:16:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-11-27 16:16:39 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-11-27 16:16:39 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-11-27 16:16:39 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-11-27 16:16:39 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-11-27 16:16:44 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-11-27 16:16:45 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:16:45 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:16:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:16:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:16:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:16:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:16:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:16:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:19 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:17:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:54 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:17:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:17:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:17:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:28 INF] Microsoft.Hosting.Lifetime - Application is shutting down...
+[2026-11-27 16:18:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService kapanıyor.
+[2026-11-27 16:18:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService iptal sinyali aldı.
+[2026-11-27 16:18:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService ExecuteAsync tamamlandı.
+[2026-11-27 16:18:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService kapandı.
+[2026-11-27 16:18:28 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService duruyor.
+[2026-11-27 16:18:32 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-11-27 16:18:32 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-11-27 16:18:32 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-11-27 16:18:32 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-11-27 16:18:32 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-11-27 16:18:32 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-11-27 16:18:32 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-11-27 16:18:37 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-11-27 16:18:38 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:18:38 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:42 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:47 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:52 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:52 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:18:57 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:18:57 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:02 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:02 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-11-27 16:19:05 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-11-27 16:19:07 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:07 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:12 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:19:12 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:17 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:17 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:22 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:22 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:27 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:27 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:27 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:19:27 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:19:27 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:19:27 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:19:27 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:19:32 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:32 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:37 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:38 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:19:38 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:19:38 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:19:38 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:19:38 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:19:42 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:47 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:19:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:52 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:52 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:19:57 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:19:57 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:02 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:02 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:07 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:07 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:12 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:12 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:17 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:20:17 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:22 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:22 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:27 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:27 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:30 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:20:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:35 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:35 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:20:36 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:20:36 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:20:36 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:20:37 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:42 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:20:47 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:20:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:04 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:21:08 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:12 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:13 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:15 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:15 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:18 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:18 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:22 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:22 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:27 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:27 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:32 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:32 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:37 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:21:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:42 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:47 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:47 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:52 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:52 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:21:55 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:21:55 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:21:55 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:21:55 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:21:55 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:21:57 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:21:57 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:02 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:02 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:04 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:22:04 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:22:04 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:22:04 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:22:04 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:22:07 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:07 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:08 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:22:17 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:22:17 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:22:18 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:18 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:18 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:18 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:22:18 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:22:18 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:22:26 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:28 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:42 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:22:42 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:46 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:46 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:22:48 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:22:48 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:00 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:23:00 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:00 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:00 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:02 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:02 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:07 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:07 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:12 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:12 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:17 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:17 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:17 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:23:25 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:23:25 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:23:25 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:23:26 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:23:26 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:23:26 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:25:35 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:25:35 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:25:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:25:37 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:25:37 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:25:37 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:25:37 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:25:50 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:25:51 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:25:51 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:25:51 ERR] Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'TaskManagement.Api.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-11-27 16:27:24 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:25:51 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:27:26 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:27:27 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:27:28 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:27:29 ERR] TaskManagement.Api.Middlewares.ExceptionMiddleware - Beklenmeyen hata oluştu. Path: /api/Tasks
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_Users_UserId". The conflict occurred in database "TaskManagementDb", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:cdc1d927-b516-4a67-858c-5612c0555ce7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TaskManagement.Api.Services.TaskService.CreateAsync(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Services\TaskService.cs:line 162
+   at TaskManagement.Api.Controllers.TasksController.Create(CreateTaskDto createTaskDto, CancellationToken cancellationToken) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Controllers\TasksController.cs:line 87
+   at lambda_method139(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagement.Api.Middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\RequestLoggingMiddleware.cs:line 47
+   at TaskManagement.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api\Middlewares\ExceptionMiddleware.cs:line 20
+[2026-11-27 16:27:28 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:27:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:27:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:27:32 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:27:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:27:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:27:34 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: test
+[2026-11-27 16:41:19 INF] TaskManagement.Api.BackgroundServices.ApplicationLifetimeHostedService - ApplicationLifetimeHostedService başladı.
+[2026-11-27 16:41:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - TaskBackgroundService çalışmaya başladı.
+[2026-11-27 16:41:20 INF] Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7214
+[2026-11-27 16:41:20 INF] Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5218
+[2026-11-27 16:41:20 INF] Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+[2026-11-27 16:41:20 INF] Microsoft.Hosting.Lifetime - Hosting environment: Development
+[2026-11-27 16:41:20 INF] Microsoft.Hosting.Lifetime - Content root path: C:\GitCode\modern-dotnet-roadmap\TaskManagement.Api\TaskManagement.Api
+[2026-11-27 16:41:24 WRN] LuckyPennySoftware.AutoMapper.License - You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-11-27 16:41:25 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:41:26 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:41:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:41:56 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/Create
+[2026-11-27 16:42:02 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturma isteği geldi. Title: title
+[2026-11-27 16:42:05 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:42:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:06 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:06 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:09 INF] TaskManagement.Api.Services.TaskService - TASK CACHE INVALIDATED: Memory + Output
+[2026-11-27 16:42:09 INF] TaskManagement.Api.Events.TaskEventSubscriber - Event Yakalandı. Yeni task oluşturuldu: title
+[2026-11-27 16:42:09 INF] TaskManagement.Api.Controllers.TasksController - Yeni task oluşturuldu. TaskId: 12
+[2026-11-27 16:42:09 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/Create
+[2026-11-27 16:42:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Controllers.TasksController - 2 adet task listelendi. Filtreye uyan toplam task: 2
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-11-27 16:42:16 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-11-27 16:42:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 2
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action başladı: Tasks/GetAll
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - BEFORE
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - BEFORE
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Controllers.TasksController - Task listesi istendi. Page: 1, PageSize: 10, Search: null, Completed: null, SortBy: id, Descending: false, IncludeDeleted: false
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Controllers.TasksController - 3 adet task listelendi. Filtreye uyan toplam task: 3
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.SecondActionFilter - SECOND FILTER - AFTER
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.FirstActionFilter - FIRST FILTER - AFTER
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Filters.ActionLoggingFilter - Action tamamlandı: Tasks/GetAll
+[2026-11-27 16:42:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:42:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:42:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:42:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:42:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:42:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:09 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:43:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:44 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:43:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:43:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:43:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:19 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:44:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:54 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:44:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:44:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:44:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:29 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:45:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:45:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:45:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:04 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:46:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:09 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:39 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:46:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:44 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:44 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:49 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:49 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:54 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:54 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:46:59 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:46:59 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:04 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:04 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:09 INF] TaskManagement.Api.Services.TaskService - CACHE MISS: tasks___id_False_1_10_False
+[2026-11-27 16:47:09 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:14 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:14 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:19 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:19 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:24 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:24 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:29 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:29 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:34 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:34 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
+[2026-11-27 16:47:39 INF] TaskManagement.Api.Services.TaskService - CACHE HIT: tasks___id_False_1_10_False
+[2026-11-27 16:47:39 INF] TaskManagement.Api.BackgroundServices.TaskBackgroundService - Background Service task kontrolü yaptı. Task sayısı: 3
